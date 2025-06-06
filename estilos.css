@@ -1,5 +1,3 @@
-/* estilos.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -9,7 +7,7 @@ body {
   background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
 }
 
-
+/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -31,17 +29,18 @@ nav ul {
   padding: 0;
 }
 
-nav ul li a {
+.nav-links li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
 
-.iconos {
-  display: flex;
-  gap: 10px;
+.nav-icons img {
+  width: 24px;
+  height: 24px;
 }
 
+/* MAIN */
 main {
   padding-top: 100px; 
   max-width: 1000px;
@@ -49,7 +48,6 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 h1 {
   font-family: "tt-travels-next", sans-serif;
@@ -64,7 +62,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-
+/* SOBRE MÍ */
 .sobre-mi {
   display: flex;
   flex-wrap: wrap;
