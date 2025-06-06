@@ -1,11 +1,15 @@
 /* GENERAL */
-html, body {
+html {
     height: 100%;
+}
+
+body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 /* TIPOGRAFÍA Y ESTILOS GENERALES */
@@ -131,6 +135,7 @@ main {
     border-radius: 8px;
     padding: 25px;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4); /* semitransparente */
 }
 
 /* CUATRO COLUMNAS */
@@ -148,6 +153,7 @@ main {
     flex-direction: column;
     gap: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4); /* semitransparente */
 }
 
 #contenido-cuatro-columnas section:hover {
@@ -168,7 +174,7 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    background-color: #f4d8ee;
+    background-color: rgba(244, 216, 238, 0.5); /* semitransparente */
     margin: 40px 0 20px 0;
     box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
     width: 100%;
@@ -184,7 +190,7 @@ footer {
     text-decoration: none;
     font-size: 24px;
     color: rgba(195, 11, 103, 0.878);
-    background-color: #f4d8ee;
+    background-color: rgba(244, 216, 238, 0.8); /* semitransparente */
     padding: 8px 12px;
     border-radius: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
