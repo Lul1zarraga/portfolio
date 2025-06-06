@@ -13,7 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #a00068; /* fucsia oscuro */
+  background-color: #300018; /* fucsia oscuro casi negro */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ main {
 
 /* INICIO */
 .inicio {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ main {
 
 h1 {
   font-family: "tt-travels-next", sans-serif;
-  font-size: 120px;
+  font-size: 100px;
   color: #ff2fa0;
   margin: 0;
 }
@@ -70,8 +70,11 @@ h1 {
   background-color: #fff8f0;
 }
 
-.sobre-mi-texto {
-  max-width: 800px;
+.contenedor-sobre-mi {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  align-items: flex-start;
 }
 
 .hola {
@@ -79,6 +82,10 @@ h1 {
   color: #ff2fa0;
   font-family: 'Meow Script', cursive;
   margin: 0;
+}
+
+.texto-sobre-mi {
+  max-width: 700px;
 }
 
 h2 {
@@ -95,9 +102,9 @@ p {
 
 /* FOOTER */
 footer {
-  background-color: #a00068; /* mismo que header */
+  background-color: #300018;
   text-align: center;
-  padding: 30px 20px;
+  padding: 15px 20px;
   color: white;
-  margin-top: 100px;
+  margin-top: 80px;
 }
