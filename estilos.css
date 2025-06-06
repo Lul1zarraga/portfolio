@@ -22,7 +22,7 @@ header {
 .nav-icons {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -65,7 +65,7 @@ header {
 .hola {
   font-family: 'Meow Script';
   font-size: 5rem;
-  color:#aa063d;
+  color: #aa063d;
   margin-top: 1rem;
 }
 
@@ -76,11 +76,11 @@ header {
 }
 
 .texto-sobre-mi p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
   color: rgb(0, 0, 0);
   max-width: 700px;
-  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -88,6 +88,6 @@ footer {
   text-align: center;
   padding: 1rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: 'Roboto', sans-serif;
 }
