@@ -5,6 +5,10 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
 }
 
 /* HEADER */
@@ -13,87 +17,86 @@ header {
   top: 0;
   width: 100%;
   background-color: white;
-  padding: 10px 20px;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
-nav ul.nav-links {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
-nav ul.nav-links li a {
+.nav-links li a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  font-size: 18px;
 }
 
-nav ul.nav-icons {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul.nav-icons li a img {
-  width: 24px;
-  height: 24px;
+.nav-icons img {
+  width: 28px;
+  height: 28px;
 }
 
 /* MAIN */
 main {
-  padding-top: 100px; 
-  max-width: 1000px;
-  margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  flex: 1;
+  margin-top: 80px; /* espacio para header */
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
+/* Sección Portfolio (pantalla completa) */
+#portfolio {
+  height: 100vh; /* ocupa toda la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+#portfolio h1 {
   font-family: "tt-travels-next", sans-serif;
-  font-size: 70px;
-  margin-bottom: 10px;
+  font-size: 120px;
+  color: #bb007f; /* fuscia intenso */
+  margin: 0;
+  text-align: center;
 }
 
-h2 {
-  font-size: 20px;
+/* Sección Sobre mí */
+#sobre-mi {
+  max-width: 900px;
+  margin: 60px auto 80px auto;
+  padding: 0 20px;
+}
+
+#sobre-mi h2 {
+  font-size: 28px;
   color: #ff7043;
   font-family: 'azo-sans-web', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* SOBRE MÍ */
-.sobre-mi {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 60px;
-}
-
-.sobre-mi img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 12px;
-}
-
-.sobre-mi-texto {
-  flex: 1;
-  min-width: 300px;
+#sobre-mi p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
 /* FOOTER */
 footer {
+  background-color: #1a001a; /* casi negro con tinte fuscia */
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px 10px;
   font-size: 14px;
-  color: #555;
-  margin-top: 60px;
+  margin-top: auto;
+  box-shadow: 0 -3px 8px rgba(187, 0, 127, 0.5);
 }
