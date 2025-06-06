@@ -1,39 +1,35 @@
-html {
+/* GENERAL */
+html, body {
+    height: 100%;
+    margin: 0;
     scroll-behavior: smooth;
-}
-
-body {
-    background:linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
+    box-sizing: border-box;
 }
 
-#inicio {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-header {
-    margin-top: 160px;
-    margin-bottom: 115px;
-}
-
+/* TIPOGRAFÍA Y ESTILOS GENERALES */
 h1 {
     font-family: "tt-travels-next", sans-serif;
     font-size: 70px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff7043;
 }
 
 h2 {
     font-size: 20px;
-    color: #ff7043; /* Naranja */
+    color: #ff7043;
     font-family: 'azo-sans-web', sans-serif;
 }
 
 p, li, nav ul li a {
     font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff7043;
 }
 
 .cv {
@@ -44,11 +40,22 @@ p, li, nav ul li a {
     color: rgba(195, 11, 100, 0.878);
 }
 
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 115px;
+}
+
+/* NAVEGACIÓN */
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap:40px;
+    gap: 40px;
+    padding: 0;
 }
 
 nav ul li a {
@@ -57,16 +64,53 @@ nav ul li a {
     padding: 6px 12px;
     border-radius: 8px;
     text-transform: uppercase;
-    transition: background-color 0.3s ease;
     background-color: #fda1c9;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #ff7043; 
-    color: white; 
-    transform: scale(1.05); 
+    background-color: #ff7043;
+    color: white;
+    transform: scale(1.05);
 }
 
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* SOBRE MÍ */
+#sobre-mi {
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+
+#sobre-mi h2 {
+    font-family: "tt-travels-next", sans-serif;
+    font-size: 40px;
+    color: rgba(195, 11, 100, 0.878);
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff7043;
+    width: 100%;
+}
+
+#sobre-mi p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ilustracion-sobre-mi {
+    display: block;
+    margin: -20px auto 10px auto;
+}
+
+/* SECCIÓN CONTACTO */
 #contacto {
     display: flex;
     justify-content: center;
@@ -79,7 +123,9 @@ nav ul li a:hover {
 }
 
 #contacto section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     border: 2px solid rgba(195, 11, 103, 0.878);
     border-radius: 8px;
@@ -87,47 +133,48 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-a {
-    text-decoration: none; 
-    color:  #ff7043; 
+/* CUATRO COLUMNAS */
+#contenido-cuatro-columnas {
+    display: flex;
+    gap: 20px;
 }
 
-main {
+#contenido-cuatro-columnas section {
+    border: 2px solid rgba(195, 11, 103, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-#sobre-mi {
-    position: relative;
-    padding-top: 80px;
-    margin-bottom: 120px;
+    gap: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-#sobre-mi h2 {
-    font-family: "tt-travels-next", sans-serif;
-    font-size: 40px;
-    color: rgba(195, 11, 100, 0.878);
-    padding-bottom: 10px;
-    border-bottom: 3px solid #ff7043; 
-    width: 100%; 
-    box-sizing: border-box; 
+#contenido-cuatro-columnas section:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
-#sobre-mi p {
-    margin-bottom: 20px;
-    line-height: 1.6;
+#contenido-cuatro-columnas ul {
+    margin: 0;
+    padding-left: 16px;
 }
 
-.ilustracion-sobre-mi {
-    width: 300px;
-    display: block;
-    margin: -20px auto 10px auto;
+#contenido-cuatro-columnas li {
+    margin-bottom: 6px;
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f4d8ee;
+    margin: 40px 0 20px 0;
+    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
+    width: 100%;
+}
+
+/* VOLVER ARRIBA */
 .volver-arriba {
     margin-top: 30px;
     text-align: center;
@@ -150,45 +197,7 @@ main {
     background-color: #f4b7db;
 }
 
-#contenido-cuatro-columnas section {
-    border: 2px solid rgba(195, 11, 103, 0.4);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-#contenido-cuatro-columnas section:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-}
-
-#contenido-cuatro-columnas {
-    display: flex;
-    gap: 20px;
-}
-
-#contenido-cuatro-columnas ul {
-    margin: 0;
-    padding-left: 16px;
-}
-
-#contenido-cuatro-columnas li {
-    margin-bottom: 6px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: #f4d8ee;
-    margin: 40px 0 20px 0;
-    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
-    width: 100%;
-}
-
+/* RESPONSIVE */
 @media (max-width: 600px) {
     #contenido-cuatro-columnas {
         flex-direction: column;
@@ -207,7 +216,6 @@ footer {
 
     #contacto section {
         width: 100%;
-        box-sizing: border-box;
     }
 
     header h1 {
