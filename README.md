@@ -1,3 +1,2 @@
 # portfolio
-prueba del repo
-prueba de actualización
+chequeando que este bien el read me
