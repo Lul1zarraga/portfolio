@@ -1,4 +1,4 @@
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ ul {
 
 /* HEADER */
 header {
-  background-color: #2b0019; /* fucsia oscuro tirando a negro */
+  background-color: #2b0019;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -39,11 +39,7 @@ header {
   margin: 0 1rem;
 }
 
-.nav-links {
-  display: flex;
-}
-
-.nav-icons {
+.nav-links, .nav-icons {
   display: flex;
 }
 
@@ -58,11 +54,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background: linear-gradient(135deg, #ff4da6, orange); /* fucsia y naranja */
 }
 
 .inicio h1 {
-  font-size: 6rem;
+  font-family: 'travels', sans-serif;
+  font-size: 8rem;
   color: orange;
   text-align: center;
 }
@@ -73,7 +70,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 5rem 2rem;
-  background-color: #fff;
+  background: linear-gradient(135deg, #ff4da6, orange);
 }
 
 .contenedor-sobre-mi {
@@ -86,9 +83,9 @@ header {
 
 .hola {
   font-family: 'Meow Script', cursive;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: orange;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .texto-sobre-mi {
