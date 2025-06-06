@@ -1,0 +1,222 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+#inicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    margin-top: 160px;
+    margin-bottom: 115px;
+}
+
+h1 {
+    font-family: "tt-travels-next", sans-serif;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #ff7043; /* Naranja */
+    font-family: 'azo-sans-web', sans-serif;
+}
+
+p, li, nav ul li a {
+    font-size: 15px;
+}
+
+.cv {
+    color: #ff7043;
+}
+
+.nombre {
+    color: rgba(195, 11, 100, 0.878);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    background-color: #fda1c9;
+}
+
+nav ul li a:hover {
+    background-color: #ff7043; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#contacto img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+#contacto section {
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgba(195, 11, 103, 0.878);
+    border-radius: 8px;
+    padding: 25px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none; 
+    color:  #ff7043; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#sobre-mi {
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+
+#sobre-mi h2 {
+    font-family: "tt-travels-next", sans-serif;
+    font-size: 40px;
+    color: rgba(195, 11, 100, 0.878);
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff7043; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+#sobre-mi p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.ilustracion-sobre-mi {
+    width: 300px;
+    display: block;
+    margin: -20px auto 10px auto;
+}
+
+.volver-arriba {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.volver-arriba a {
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(195, 11, 103, 0.878);
+    background-color: #f4d8ee;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.878);
+    cursor: pointer;
+}
+
+.volver-arriba a:hover {
+    transform: translateY(-6px);
+    background-color: #f4b7db;
+}
+
+#contenido-cuatro-columnas section {
+    border: 2px solid rgba(195, 11, 103, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#contenido-cuatro-columnas section:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+#contenido-cuatro-columnas {
+    display: flex;
+    gap: 20px;
+}
+
+#contenido-cuatro-columnas ul {
+    margin: 0;
+    padding-left: 16px;
+}
+
+#contenido-cuatro-columnas li {
+    margin-bottom: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f4d8ee;
+    margin: 40px 0 20px 0;
+    box-shadow: 0 4px 8px rgba(195, 11, 103, 0.1);
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #contenido-cuatro-columnas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contenido-cuatro-columnas section {
+        width: 90%;
+    }
+
+    #contacto {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    #contacto section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    #sobre-mi h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
