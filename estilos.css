@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap'); 
 
 body {
   margin: 0;
@@ -81,7 +81,6 @@ header {
   color: rgb(0, 0, 0);
   max-width: 700px;
   font-family: 'Roboto', sans-serif;
- 
 }
 
 footer {
@@ -90,5 +89,7 @@ footer {
   padding: 1rem;
   color: white;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
+
+
