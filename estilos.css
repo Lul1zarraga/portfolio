@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #300018;
+  padding: 20px 40px; /* más grande */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a,
+.nav-icons li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MAIN */
+main {
+  padding-top: 140px; /* más espacio por header agrandado */
+}
+
+/* INICIO */
+.inicio {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "tt-travels-next", sans-serif;
+  font-size: 100px;
+  color: #ff7043; /* naranja */
+  margin: 0;
+}
+
+/* SOBRE MÍ */
+.sobre-mi {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #fff8f0;
+}
+
+.contenedor-sobre-mi {
+  display: flex;
+  gap: 60px;
+  max-width: 1000px;
+  align-items: flex-end;
+}
+
+.hola {
+  font-size: 100px;
+  color: #ff7043; /* naranja */
+  font-family: 'Meow Script', cursive;
+  margin: 0;
+  line-height: 1;
+}
+
+.texto-sobre-mi {
+  max-width: 700px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #ff7043;
+  font-family: 'azo-sans-web', sans-serif;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background-color: #300018;
+  text-align: center;
+  padding: 10px 20px; /* más chico */
+  color: white;
+  margin-top: 80px;
+}
