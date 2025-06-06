@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
 
 body {
   margin: 0;
@@ -12,18 +12,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #441122; /* fuscia oscuro, no tan negro */
+  background-color: #612401; /* fuscia oscuro */
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.nav-links, .nav-icons {
+.nav-links,
+.nav-icons {
   list-style: none;
   display: flex;
   gap: 1.5rem;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-links li a,
@@ -43,13 +45,13 @@ header {
 .inicio h1 {
   font-family: 'tt-travels-next', sans-serif;
   font-size: 8rem;
-  color: orange;
+  color: rgb(253, 116, 3);
 }
 
 .sobre-mi {
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #ffe5c2, #fcd2e2); /* sigue el degradado */
-  color: white;
+  background: linear-gradient(to bottom, #ffe5c2, #fcd2e2);
+  color: rgb(253, 116, 3);
 }
 
 .contenedor-sobre-mi {
@@ -63,14 +65,14 @@ header {
 .hola {
   font-family: 'Meow Script', cursive;
   font-size: 5rem;
-  color: orange;
+  color: rgb(253, 116, 3);
   margin-top: 1rem;
 }
 
 .texto-sobre-mi h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .texto-sobre-mi p {
@@ -78,12 +80,14 @@ header {
   line-height: 1.6;
   color: white;
   max-width: 700px;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
-  background-color: #441122; /* mismo que header */
+  background-color: #612401;
   text-align: center;
   padding: 1rem;
   color: white;
   font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
 }
