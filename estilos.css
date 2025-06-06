@@ -1,50 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom, #ffedd9 0%, #fed6eb 50%, #fff8d2 100%);
-  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
 }
 
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #300018;
-  padding: 20px 40px; /* más grande */
+  background-color: #2b0019; /* fucsia oscuro tirando a negro */
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  position: relative;
+  z-index: 10;
 }
 
-.nav-left ul,
-.nav-right ul {
-  list-style: none;
+.nav-left, .nav-right {
   display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
 }
 
-.nav-links li a,
-.nav-icons li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+.nav-links li, .nav-icons li {
+  margin: 0 1rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-icons {
+  display: flex;
 }
 
 .nav-icons img {
   width: 24px;
   height: 24px;
-}
-
-/* MAIN */
-main {
-  padding-top: 140px; /* más espacio por header agrandado */
 }
 
 /* INICIO */
@@ -53,59 +58,63 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
-h1 {
-  font-family: "tt-travels-next", sans-serif;
-  font-size: 100px;
-  color: #ff7043; /* naranja */
-  margin: 0;
+.inicio h1 {
+  font-size: 6rem;
+  color: orange;
+  text-align: center;
 }
 
-/* SOBRE MÍ */
+/* SOBRE MI */
 .sobre-mi {
   display: flex;
   justify-content: center;
-  padding: 80px 20px;
-  background-color: #fff8f0;
+  align-items: flex-start;
+  padding: 5rem 2rem;
+  background-color: #fff;
 }
 
 .contenedor-sobre-mi {
   display: flex;
-  gap: 60px;
-  max-width: 1000px;
-  align-items: flex-end;
+  gap: 3rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .hola {
-  font-size: 100px;
-  color: #ff7043; /* naranja */
   font-family: 'Meow Script', cursive;
-  margin: 0;
-  line-height: 1;
+  font-size: 4rem;
+  color: orange;
+  margin-top: 1rem;
 }
 
 .texto-sobre-mi {
   max-width: 700px;
 }
 
-h2 {
-  font-size: 28px;
-  color: #ff7043;
-  font-family: 'azo-sans-web', sans-serif;
-  margin-bottom: 10px;
+.texto-sobre-mi h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
 }
 
-p {
-  font-size: 18px;
+.texto-sobre-mi p {
+  font-size: 1.2rem;
   line-height: 1.6;
+  color: #333;
 }
 
 /* FOOTER */
 footer {
-  background-color: #300018;
+  background-color: #2b0019;
+  padding: 1rem 2rem;
   text-align: center;
-  padding: 10px 20px; /* más chico */
+}
+
+footer p {
   color: white;
-  margin-top: 80px;
+  font-size: 0.9rem;
 }
