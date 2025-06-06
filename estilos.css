@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #612401; /* fuscia oscuro */
+  background-color: #aa063d;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -39,7 +39,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2); /* pastel */
+  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2); 
 }
 
 .inicio h1 {
@@ -63,28 +63,28 @@ header {
 }
 
 .hola {
-  font-family: 'Meow Script', cursive;
+  font-family: 'Meow Script';
   font-size: 5rem;
-  color: rgb(253, 116, 3);
+  color:#aa063d;
   margin-top: 1rem;
 }
 
 .texto-sobre-mi h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(253, 116, 3);
 }
 
 .texto-sobre-mi p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: white;
+  color: rgb(0, 0, 0);
   max-width: 700px;
   font-family: 'Roboto', sans-serif;
 }
 
 footer {
-  background-color: #612401;
+  background-color: #aa063d;
   text-align: center;
   padding: 1rem;
   color: white;
