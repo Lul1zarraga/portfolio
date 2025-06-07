@@ -130,8 +130,33 @@ header {
 
   opacity: 0;
   transform: translateX(-100%);
+  animation: entrarDesdeIzquierda 0.6s forwards;
+}
+
+.contenido:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.contenido:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.contenido:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.contenido:nth-child(4) {
+  animation-delay: 1.2s;
 }
 
 @keyframes entrarDesdeIzquierda {
   to {
-    opacity: 1
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #aa063d;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
