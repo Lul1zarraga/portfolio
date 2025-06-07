@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2); 
+  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
 
 .inicio h1 {
