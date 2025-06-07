@@ -126,6 +126,7 @@ header {
   max-width: 300px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   color: white;
 
   opacity: 0;
