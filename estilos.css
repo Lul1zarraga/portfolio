@@ -1,52 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
+
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
+  color: white;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: #f0f0f0;
+  padding: 16px 32px;
+  background-color: #aa063d;
 }
 
-nav a {
-  margin: 0 10px;
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+  color: white;
   text-decoration: none;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
+.nav-right a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.nav-right a img:hover {
+  transform: scale(1.1);
+}
+
+/* INICIO */
 .inicio {
-  text-align: center;
-  padding: 60px 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.inicio h1 {
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 120px;
+  color: rgb(253, 116, 3);
+  animation: aparecer 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SOBRE MI */
 .sobre-mi {
-  scroll-margin-top: 80px; /* evita que se corte el scroll por el header */
-  padding: 40px 20px 20px;
-  margin-bottom: 10px;
+  padding: 64px 32px;
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 40px;
+  color: rgb(253, 116, 3);
 }
 
+.contenedor-sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hola {
+  font-family: 'Meow Script', cursive;
+  font-size: 80px;
+  color: #aa063d;
+  margin-top: 16px;
+}
+
+.texto-sobre-mi h3 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: rgb(253, 116, 3);
+}
+
+.texto-sobre-mi p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  max-width: 700px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SECCIONES HORIZONTALES */
+.secciones-horizontales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 64px 32px;
+  background: transparent; /* Deja ver el degradado */
+}
+
+/* Aquí sacamos la animación inicial para que no aparezcan animadas al cargar */
+.contenido {
+  background-color: rgb(253, 116, 3);
+  border-radius: 12px;
+  padding: 16px;
+  flex: 1 1 220px;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  
+  opacity: 0;                 /* Empezar invisibles */
+  transform: translateX(-100%); /* Empezar fuera de pantalla a la izquierda */
+}
+
+/* Animación que hace entrar desde la izquierda */
+@keyframes entrarDesdeIzquierda {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Cuando se agrega la clase animar a .secciones-horizontales, activamos la animación */
+.secciones-horizontales.animar .contenido {
+  animation: entrarDesdeIzquierda 0.8s ease forwards;
+}
+
+/* Delays para que las columnas aparezcan escalonadas */
+.secciones-horizontales.animar .contenido:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.secciones-horizontales.animar .contenido:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.secciones-horizontales.animar .contenido:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.secciones-horizontales.animar .contenido:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* TITULOS Y PARRAFOS EN CADA COLUMNA */
+.contenido h4 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contenido p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contenedor-sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inicio h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .contenido {
+    max-width: 100%;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #aa063d;
+  text-align: center;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
 .secciones-horizontales {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-  padding: 10px 20px 30px;
-  margin-bottom: 20px;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .secciones-horizontales.animar {
   opacity: 1;
   transform: translateY(0);
-}
-
-.contenido {
-  margin-bottom: 30px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px 10px;
-  background-color: #f7f7f7;
 }
