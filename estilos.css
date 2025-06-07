@@ -16,18 +16,11 @@ header {
   flex-wrap: nowrap;
 }
 
-nav ul {
-  list-style: none;
+.nav-left,
+.nav-right {
   display: flex;
   gap: 20px;
-  padding: 0;
-  margin: 0;
   align-items: center;
-}
-
-nav ul li {
-  margin: 0;
-  padding: 0;
 }
 
 .nav-left a,
