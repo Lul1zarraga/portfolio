@@ -86,6 +86,43 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
+.secciones-horizontales {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 64px 32px;
+  background: linear-gradient(to bottom, #ffe5c2, #fcd2e2);
+  color: rgb(253, 116, 3);
+}
+
+.secciones-horizontales .contenido {
+  flex: 1 1 20%;
+  min-width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.secciones-horizontales h2 {
+  font-size: 20px;
+  color: #aa063d;
+  margin-bottom: 12px;
+}
+
+.secciones-horizontales ul {
+  padding-left: 20px;
+}
+
+.secciones-horizontales li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 footer {
   background-color: #aa063d;
   text-align: center;
