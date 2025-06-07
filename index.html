@@ -5,12 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
 
-  <!-- Tipografía tt-travels-next desde Adobe Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
-
-  <!-- Tipografía Roboto y Meow Script -->
   <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
@@ -69,9 +65,11 @@
 
       <section id="habilidades-informaticas" class="contenido">
         <h4>Habilidades Informáticas</h4>
-        <p>Microsoft Office</p>
-        <p>Gmail y Google Drive</p>
-        <p>Adobe: InDesign, Photoshop, Illustrator y After effects</p>
+        <p>Manejo de Adobe:</p>
+        <p>InDesign <span class="estrella">★</span></p>
+        <p>Photoshop <span class="estrella">★</span></p>
+        <p>Illustrator <span class="estrella">★</span></p>
+        <p>After Effects <span class="estrella">★</span></p>
       </section>
 
       <section id="idiomas" class="contenido">
@@ -84,33 +82,30 @@
   <footer>
     <p>&copy; 2025 Luciana - Todos los derechos reservados</p>
   </footer>
-</body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
-    const secciones = document.querySelector('.secciones-horizontales');
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
+      const secciones = document.querySelector('.secciones-horizontales');
 
-    // 1. Animar cuando se hace clic en "Sobre mí"
-    enlaceSobreMi.addEventListener("click", function () {
-      setTimeout(() => {
-        secciones.classList.add('animar');
-      }, 500); // medio segundo
-    });
-
-    // 2. Animar cuando aparece en pantalla (scroll)
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
+      enlaceSobreMi.addEventListener("click", function () {
+        setTimeout(() => {
           secciones.classList.add('animar');
-        }
+        }, 500);
       });
-    }, {
-      threshold: 0.3 // cuando se vea el 30% del contenedor
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            secciones.classList.add('animar');
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(secciones);
     });
-
-    observer.observe(secciones);
-  });
-</script>
-
+  </script>
+</body>
 </html>
