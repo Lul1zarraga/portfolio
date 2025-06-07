@@ -85,4 +85,19 @@
     <p>&copy; 2025 Luciana - Todos los derechos reservados</p>
   </footer>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
+    const secciones = document.querySelector('.secciones-horizontales');
+
+    enlaceSobreMi.addEventListener("click", function() {
+      // Esperar 2 segundos antes de animar
+      setTimeout(() => {
+        secciones.classList.add('animar');
+      }, 2000);
+    });
+  });
+</script>
+
 </html>
