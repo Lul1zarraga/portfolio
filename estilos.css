@@ -14,27 +14,6 @@ header {
   background-color: #aa063d;
 }
 
-.nav-icons {
-  display: flex;
-  gap: 1.2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-icons img {
-  /* Ya está el tamaño en el HTML, pero podés asegurar con max */
-  max-width: 50px;
-  max-height: 50px;
-  transition: transform 0.2s;
-  display: block; /* elimina espacio abajo de la imagen */
-}
-
-.nav-icons img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-} 
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -42,17 +21,38 @@ header {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* podés cambiar a px */
+  font-size: 16px;
 }
 
 .nav-links li p {
-  margin: 0; /* Para que no tenga margen el <p> */
+  margin: 0;
 }
 
 .nav-links li p a {
   text-decoration: none;
   color: white;
-} 
+}
+
+/* Menú derecho - íconos */
+.nav-icons {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-icons img {
+  max-width: 50px;
+  max-height: 50px;
+  transition: transform 0.2s;
+  display: block;
+}
+
+.nav-icons img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .nav-left,
 .nav-right {
