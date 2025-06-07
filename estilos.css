@@ -14,6 +14,26 @@ header {
   background-color: #aa063d;
 }
 
+.nav-icons {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-icons img {
+  /* Ya está el tamaño en el HTML, pero podés asegurar con max */
+  max-width: 50px;
+  max-height: 50px;
+  transition: transform 0.2s;
+  display: block; /* elimina espacio abajo de la imagen */
+}
+
+.nav-icons img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} 
 
 .nav-left,
 .nav-right {
