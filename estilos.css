@@ -11,17 +11,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px; /* 1rem = 16px */
+  padding: 16px 32px;
   background-color: #aa063d;
-  flex-wrap: nowrap;
-  gap: 16px;
+  flex-wrap: nowrap; /* que no quiebren */
 }
 
 .nav-left,
 .nav-right {
   display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .nav-links,
@@ -30,13 +27,16 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 16px;
 }
 
 .nav-links li,
 .nav-icons li {
-  display: flex;
-  align-items: center;
+  margin-right: 20px; /* espacio entre items */
+}
+
+.nav-links li:last-child,
+.nav-icons li:last-child {
+  margin-right: 0; /* sin margen al final */
 }
 
 .nav-links li p {
@@ -44,8 +44,8 @@ header {
 }
 
 .nav-links li p a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -54,12 +54,6 @@ header {
   width: 50px;
   height: 50px;
   display: block;
-  transition: transform 0.2s ease-in-out;
-}
-
-.nav-icons img:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 .nav-left,
 .nav-right {
