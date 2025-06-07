@@ -87,16 +87,29 @@
 </body>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
     const secciones = document.querySelector('.secciones-horizontales');
 
-    enlaceSobreMi.addEventListener("click", function() {
-      // Esperar 2 segundos antes de animar
+    // 1. Animar cuando se hace clic en "Sobre mí"
+    enlaceSobreMi.addEventListener("click", function () {
       setTimeout(() => {
         secciones.classList.add('animar');
-      }, 2000);
+      }, 500); // medio segundo
     });
+
+    // 2. Animar cuando aparece en pantalla (scroll)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          secciones.classList.add('animar');
+        }
+      });
+    }, {
+      threshold: 0.3 // cuando se vea el 30% del contenedor
+    });
+
+    observer.observe(secciones);
   });
 </script>
 
