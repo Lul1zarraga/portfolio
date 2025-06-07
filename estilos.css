@@ -66,26 +66,33 @@ header {
 }
 
 .hola {
-  font-family: 'Meow Script';
+  font-family: 'Meow Script', cursive;
   font-size: 80px;
   color: #aa063d;
   margin-top: 16px;
 }
 
-.texto-sobre-mi h2 {
-  font-size: 40px;
-  margin-bottom: 16px;
-  color: rgb(253, 116, 3);
+/* Título h2 */
+.texto-sobre-mi h2,
+.secciones-horizontales h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Negrita para títulos */
+  font-size: 20px;
+  color: #aa063d;
+  margin-bottom: 12px;
 }
 
+/* Texto después de h2 en sección sobre-mi */
 .texto-sobre-mi p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Roboto Regular */
   font-size: 16px;
   line-height: 1.6;
-  color: rgb(0, 0, 0);
+  color: black;
   max-width: 700px;
-  font-family: 'Roboto', sans-serif;
 }
 
+/* Contenedor secciones múltiples */
 .secciones-horizontales {
   display: flex;
   justify-content: space-between;
@@ -96,6 +103,7 @@ header {
   color: rgb(253, 116, 3);
 }
 
+/* Cada sección de contenido */
 .secciones-horizontales .contenido {
   flex: 1 1 20%;
   min-width: 220px;
@@ -107,20 +115,18 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
-.secciones-horizontales h2 {
-  font-size: 20px;
-  color: #aa063d;
-  margin-bottom: 12px;
-}
-
+/* Listas dentro de contenido */
 .secciones-horizontales ul {
   padding-left: 20px;
 }
 
 .secciones-horizontales li {
   margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Roboto Regular */
   font-size: 14px;
   line-height: 1.4;
+  color: black;
 }
 
 footer {
