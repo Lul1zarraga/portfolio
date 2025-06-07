@@ -35,6 +35,25 @@ header {
   cursor: pointer;
 } 
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /* podés cambiar a px */
+}
+
+.nav-links li p {
+  margin: 0; /* Para que no tenga margen el <p> */
+}
+
+.nav-links li p a {
+  text-decoration: none;
+  color: white;
+} 
+
 .nav-left,
 .nav-right {
   display: flex;
