@@ -1,95 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Portfolio</title>
-
-  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css"> <!-- tu archivo CSS -->
 </head>
 <body>
-<header>
-  <nav class="nav-left">
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#formacion">Formación</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
 
-  <nav class="nav-right">
-    <a href="https://www.instagram.com/lulizarraga_" target="_blank" rel="noopener noreferrer">
-      <img src="img/icono-instagram.svg" alt="Instagram" width="50" height="50" />
-    </a>
-    <a href="https://www.behance.net/lucianalizarra1" target="_blank" rel="noopener noreferrer">
-      <img src="img/icono-behance.svg" alt="Behance" width="50" height="50" />
-    </a>
-    <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank" rel="noopener noreferrer">
-      <img src="img/icono-linkedin.svg" alt="LinkedIn" width="50" height="50" />
-    </a>
-    <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank" rel="noopener noreferrer">
-      <img src="img/icono-gmail.svg" alt="Gmail" width="50" height="50" />
-    </a>
-  </nav>
-</header>
+  <header>
+    <div class="nav-left">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </div>
+    <div class="nav-right">
+      <a href="#"><img src="tu-logo.png" alt="Logo"></a>
+    </div>
+  </header>
 
-<main>
-  <section class="inicio">
+  <section class="inicio" id="inicio">
     <h1>Portfolio</h1>
   </section>
 
-  <section id="sobre-mi" class="sobre-mi">
+  <section class="sobre-mi" id="sobre-mi">
     <div class="contenedor-sobre-mi">
-      <h3 class="hola">¡Hola!</h3>
       <div class="texto-sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación. También tengo un interés particular por la ilustración y la fotografía, lo que enriquece mi visión estética y artística.
-        </p>
+        <h2>¡Hola!</h2>
+        <h3>Sobre mí</h3>
+        <p>Soy estudiante de Diseño y Comunicación Visual, apasionada por las artes visuales. Me interesa crear experiencias gráficas memorables.</p>
+        <p>Disfruto pintar, ilustrar, y explorar el mundo a través de la fotografía y el diseño. Me gusta conectar con el arte en todas sus formas.</p>
       </div>
     </div>
   </section>
 
-  <div class="secciones-horizontales">
-    <section id="formacion" class="contenido">
-      <h2>Formación</h2>
+  <section class="secciones-horizontales">
+    <div class="contenido">
+      <h4>Formación</h4>
       <ul>
-        <li>Licenciatura en Diseño y Comunicación Visual en la UNLa — En curso desde 2022</li>
-        <li>Curso de Auxiliar de Marketing en el CFP — Finalizado en 2021</li>
+        <li>Lic. en Diseño y Comunicación Visual - UNLA (En curso)</li>
+        <li>Talleres de pintura e ilustración digital</li>
       </ul>
-    </section>
-
-    <section id="experiencia-laboral" class="contenido">
-      <h2>Experiencia laboral</h2>
+    </div>
+    <div class="contenido">
+      <h4>Experiencia</h4>
       <ul>
-        <li>Freelance en Diseño Gráfico: creación de materiales gráficos, conceptualización y materialización de proyectos, trabajo grupal e individual.</li>
+        <li>Diseño de afiches y publicaciones para redes</li>
+        <li>Proyectos gráficos en la universidad</li>
       </ul>
-    </section>
-
-    <section id="habilidades-informaticas" class="contenido">
-      <h2>Habilidades Informáticas</h2>
+    </div>
+    <div class="contenido">
+      <h4>Habilidades Informáticas</h4>
       <ul>
-        <li>Microsoft Office</li>
-        <li>Gmail</li>
-        <li>Google Drive</li>
-        <li>Paquete Adobe (InDesign, Photoshop e Illustrator)</li>
+        <li>Adobe Illustrator, Photoshop, InDesign</li>
+        <li>Figma, HTML, CSS</li>
       </ul>
-    </section>
-
-    <section id="idiomas" class="contenido">
-      <h2>Idiomas</h2>
+    </div>
+    <div class="contenido">
+      <h4>Idiomas</h4>
       <ul>
-        <li>Inglés: Comprensión oral - Nivel Intermedio</li>
-        <li>Producción oral - Nivel Básico</li>
+        <li>Español (nativo)</li>
+        <li>Inglés (intermedio)</li>
       </ul>
-    </section>
-  </div>
-</main>
+    </div>
+  </section>
 
-<footer>
-  <p>&copy; 2025 Luciana - Todos los derechos reservados</p>
-</footer>
+  <footer class="footer-blanco">
+    © 2025 Luciana - Todos los derechos reservados
+  </footer>
+
 </body>
 </html>

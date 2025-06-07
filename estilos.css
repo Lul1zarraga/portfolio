@@ -2,11 +2,12 @@
 
 body {
   margin: 0;
-  font-family: 'tt-travels-next', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
-  color: white;
+  color: #000;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -37,6 +38,7 @@ header {
   height: 50px;
 }
 
+/* INICIO */
 .inicio {
   height: 100vh;
   display: flex;
@@ -48,9 +50,45 @@ header {
 .inicio h1 {
   font-family: 'tt-travels-next', sans-serif;
   font-size: 128px;
-  color: rgb(253, 116, 3);
+  color: orange;
+  margin: 0;
 }
 
+/* H2: “Hola” */
+.hola {
+  font-family: 'Meow Script', cursive;
+  font-size: 80px;
+  color: #aa063d;
+  margin: 16px 0;
+}
+
+/* H3: “Sobre mí” u otras secciones grandes */
+h3 {
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 40px;
+  color: orange;
+  margin-top: 30px;
+}
+
+/* H4: “Formación”, “Experiencia”, etc. */
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #aa063d;
+  margin: 20px 0 8px;
+}
+
+/* Texto general */
+p, li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* SOBRE MÍ */
 .sobre-mi {
   padding: 64px 32px;
   background: linear-gradient(to bottom, #ffe5c2, #fcd2e2);
@@ -65,34 +103,15 @@ header {
   margin: 0 auto;
 }
 
-.hola {
-  font-family: 'Meow Script', cursive;
-  font-size: 80px;
-  color: #aa063d;
-  margin-top: 16px;
-}
-
-/* Título h2 */
-.texto-sobre-mi h2,
-.secciones-horizontales h2 {
+.texto-sobre-mi h2 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700; /* Negrita para títulos */
+  font-weight: 700;
   font-size: 20px;
   color: #aa063d;
   margin-bottom: 12px;
 }
 
-/* Texto después de h2 en sección sobre-mi */
-.texto-sobre-mi p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400; /* Roboto Regular */
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-  max-width: 700px;
-}
-
-/* Contenedor secciones múltiples */
+/* SECCIONES HORIZONTALES */
 .secciones-horizontales {
   display: flex;
   justify-content: space-between;
@@ -103,7 +122,6 @@ header {
   color: rgb(253, 116, 3);
 }
 
-/* Cada sección de contenido */
 .secciones-horizontales .contenido {
   flex: 1 1 20%;
   min-width: 220px;
@@ -115,20 +133,26 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Listas dentro de contenido */
+.secciones-horizontales h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #aa063d;
+  margin-bottom: 12px;
+}
+
 .secciones-horizontales ul {
   padding-left: 20px;
+  margin: 0;
 }
 
 .secciones-horizontales li {
   margin-bottom: 8px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400; /* Roboto Regular */
   font-size: 14px;
   line-height: 1.4;
-  color: black;
 }
 
+/* FOOTER */
 footer {
   background-color: #aa063d;
   text-align: center;
