@@ -5,7 +5,9 @@ body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
   color: white;
-  font-size: 18px; /* +2px más grande */
+  font-size: 18px; 
+  line-height: 1.6;
+
 }
 
 header {
@@ -27,8 +29,7 @@ header {
   color: white;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px; /* +2px */
-}
+  font-size: 18px; 
 
 .nav-right a img {
   width: 40px;
@@ -94,7 +95,7 @@ header {
 }
 
 .texto-sobre-mi p {
-  font-size: 18px; /* +2px */
+  font-size: 25px; 
   line-height: 1.6;
   color: black;
   max-width: 700px;
@@ -127,6 +128,7 @@ header {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
   color: white;
+  line-height: 1.6;
 
   opacity: 0;
   transform: translateX(-100%);
@@ -158,5 +160,7 @@ footer {
   padding: 16px;
   background-color: #aa063d;
   color: white;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif;
+}
 }
