@@ -49,7 +49,7 @@
         <div class="texto-sobre-mi">
           <h3>Sobre mí</h3>
           <p>
-           Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación. También tengo un interés particular por la ilustración y la fotografía, lo que enriquece mi visión estética y artística. Además de mis estudios académicos, me entusiasma conectar con diferentes formas de arte, especialmente a través de visitas a museos y exposiciones. Creo firmemente que la creatividad es un proceso continuo que siempre se puede enriquecer con nuevas influencias y experiencias.
+            Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación. También tengo un interés particular por la ilustración y la fotografía, lo que enriquece mi visión estética y artística. Además de mis estudios académicos, me entusiasma conectar con diferentes formas de arte, especialmente a través de visitas a museos y exposiciones. Creo firmemente que la creatividad es un proceso continuo que siempre se puede enriquecer con nuevas influencias y experiencias.
           </p>
         </div>
       </div>
@@ -84,33 +84,33 @@
   <footer>
     <p>&copy; 2025 Luciana - Todos los derechos reservados</p>
   </footer>
-</body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
-    const secciones = document.querySelector('.secciones-horizontales');
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
+      const secciones = document.querySelector(".secciones-horizontales");
+      const sobreMi = document.getElementById("sobre-mi");
 
-    // 1. Animar cuando se hace clic en "Sobre mí"
-    enlaceSobreMi.addEventListener("click", function () {
-      setTimeout(() => {
-        secciones.classList.add('animar');
-      }, 500); // medio segundo
-    });
-
-    // 2. Animar cuando aparece en pantalla (scroll)
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          secciones.classList.add('animar');
-        }
+      // Activar animación al hacer clic en "Sobre mí"
+      enlaceSobreMi.addEventListener("click", function () {
+        setTimeout(() => {
+          secciones.classList.add("animar");
+        }, 500); // 0.5 segundos
       });
-    }, {
-      threshold: 0.3 // cuando se vea el 30% del contenedor
+
+      // Activar animación al hacer scroll (cuando aparece sobre-mi)
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              secciones.classList.add("animar");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(sobreMi);
     });
-
-    observer.observe(secciones);
-  });
-</script>
-
+  </script>
+</body>
 </html>
