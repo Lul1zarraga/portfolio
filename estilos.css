@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  font-family: 'tt-travels-next', sans-serif;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
   color: white;
 }
@@ -10,10 +9,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 16px 32px;
   background-color: #aa063d;
-  flex-wrap: nowrap;
 }
 
 .nav-left,
@@ -54,6 +51,8 @@ header {
 .sobre-mi {
   padding: 64px 32px;
   background: linear-gradient(to bottom, #ffe5c2, #fcd2e2);
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 40px;
   color: rgb(253, 116, 3);
 }
 
