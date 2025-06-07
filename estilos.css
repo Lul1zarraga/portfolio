@@ -7,7 +7,7 @@ body {
   color: white;
 }
 
-/* HEADER */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,6 @@ header {
   transform: scale(1.1);
 }
 
-/* INICIO */
 .inicio {
   height: 100vh;
   display: flex;
@@ -67,9 +66,7 @@ header {
   }
 }
 
-/* SOBRE MI */
 .sobre-mi {
-  padding: 64px 32px;
   font-family: 'tt-travels-next', sans-serif;
   font-size: 40px;
   color: rgb(253, 116, 3);
@@ -104,17 +101,16 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
-/* SECCIONES HORIZONTALES */
 .secciones-horizontales {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   padding: 64px 32px;
-  background: transparent; /* Deja ver el degradado */
+  background: transparent; 
 }
 
-/* Aquí sacamos la animación inicial para que no aparezcan animadas al cargar */
+
 .contenido {
   background-color: rgb(253, 116, 3);
   border-radius: 12px;
@@ -125,11 +121,10 @@ header {
   font-family: 'Roboto', sans-serif;
   color: white;
   
-  opacity: 0;                 /* Empezar invisibles */
-  transform: translateX(-100%); /* Empezar fuera de pantalla a la izquierda */
+  opacity: 0;                
+  transform: translateX(-100%); 
 }
 
-/* Animación que hace entrar desde la izquierda */
 @keyframes entrarDesdeIzquierda {
   to {
     opacity: 1;
@@ -137,12 +132,11 @@ header {
   }
 }
 
-/* Cuando se agrega la clase animar a .secciones-horizontales, activamos la animación */
 .secciones-horizontales.animar .contenido {
   animation: entrarDesdeIzquierda 0.8s ease forwards;
 }
 
-/* Delays para que las columnas aparezcan escalonadas */
+
 .secciones-horizontales.animar .contenido:nth-child(1) {
   animation-delay: 0.2s;
 }
@@ -159,7 +153,6 @@ header {
   animation-delay: 0.8s;
 }
 
-/* TITULOS Y PARRAFOS EN CADA COLUMNA */
 .contenido h4 {
   color: white;
   font-size: 20px;
@@ -172,7 +165,7 @@ header {
   line-height: 1.4;
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 768px) {
   .contenedor-sobre-mi {
     flex-direction: column;
@@ -190,7 +183,7 @@ header {
   }
 }
 
-/* FOOTER */
+
 footer {
   background-color: #aa063d;
   text-align: center;
