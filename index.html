@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luciana - Portfolio</title>
-    <link rel="stylesheet" href="estilos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
 
-    <main>
-      <section id="inicio">
-        <h1>Hola, soy Luciana</h1>
-        <p>Diseñadora en formación y amante de lo visual.</p>
+  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-left">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <nav class="nav-right">
+      <a href="https://www.instagram.com/lulizarraga_" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.behance.net/lucianalizarra1" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-behance.svg" alt="Behance" />
+      </a>
+      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-gmail.svg" alt="Gmail" />
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <h1>Portfolio</h1>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="contenedor-sobre-mi">
+        <h2 class="hola">¡Hola!</h2>
+        <div class="texto-sobre-mi">
+          <h3>Sobre mí</h3>
+          <p>
+           Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación. También tengo un interés particular por la ilustración y la fotografía, lo que enriquece mi visión estética y artística. Además de mis estudios académicos, me entusiasma conectar con diferentes formas de arte, especialmente a través de visitas a museos y exposiciones. Creo firmemente que la creatividad es un proceso continuo que siempre se puede enriquecer con nuevas influencias y experiencias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="secciones-horizontales">
+      <section id="formacion" class="contenido">
+        <h4>Formación</h4>
+        <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
+        <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
       </section>
 
-      <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <p>Aquí algunos de mis trabajos...</p>
-        <!-- contenido de proyectos -->
+      <section id="experiencia-laboral" class="contenido">
+        <h4>Experiencia laboral</h4>
+        <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
       </section>
 
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes escribirme a luciana@email.com</p>
+      <section id="habilidades-informaticas" class="contenido">
+        <h4>Habilidades Informáticas</h4>
+        <p>Manejo de Adobe:</p>
+        <p>InDesign <span class="estrella">★</span></p>
+        <p>Photoshop <span class="estrella">★</span></p>
+        <p>Illustrator <span class="estrella">★</span></p>
+        <p>After Effects <span class="estrella">★</span></p>
       </section>
-    </main>
 
-    <footer class="footer-flex">
-      <div class="footer-left">&copy; 2025 Luciana</div>
-      <div class="footer-center">Portfolio</div>
-      <div class="footer-right">Computación III - UNLa | Buenos Aires, Argentina</div>
-    </footer>
-  </body>
+      <section id="idiomas" class="contenido">
+        <h4>Idiomas</h4>
+        <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luciana - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
+      const secciones = document.querySelector('.secciones-horizontales');
+
+      enlaceSobreMi.addEventListener("click", function () {
+        setTimeout(() => {
+          secciones.classList.add('animar');
+        }, 500);
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            secciones.classList.add('animar');
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(secciones);
+    });
+  </script>
+</body>
 </html>
