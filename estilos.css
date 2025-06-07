@@ -97,28 +97,25 @@ header {
 .secciones-horizontales .contenido {
   flex: 1 1 20%;
   min-width: 220px;
-  background-color: white;
+  background-color: fuchsia;
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  color: black;
   font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
-.secciones-horizontales h2 {
+.secciones-horizontales .contenido h4 {
+  color: white;
   font-size: 20px;
-  color: #aa063d;
   margin-bottom: 12px;
 }
 
-.secciones-horizontales ul {
-  padding-left: 20px;
-}
-
-.secciones-horizontales li {
+.secciones-horizontales .contenido p {
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
+  color: black;
 }
 
 footer {
