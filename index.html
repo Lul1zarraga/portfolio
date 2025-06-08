@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -6,10 +6,7 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
-
-
   <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
@@ -42,15 +39,13 @@
     </section>
 
     <section id="sobre-mi" class="sobre-mi">
-          <h3>Sobre mí</h3>
-          <p>
-           Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
-          </p>
-        </div>
-      </div>
+      <h3>Sobre mí</h3>
+      <p>
+        Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
+      </p>
     </section>
 
-    <div class="secciones-horizontales">
+    <div class="secciones-horizontales" id="proyectos">
       <section id="formacion" class="contenido">
         <h4>Formación</h4>
         <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
@@ -62,14 +57,13 @@
         <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
       </section>
 
-  <section id="habilidades-informaticas" class="contenido">
-  <h4>Manejo de Adobe:</h4>
+      <section id="habilidades-informaticas" class="contenido">
+        <h4>Manejo de Adobe:</h4>
         <p>InDesign <span class="estrella">★★★★</span></p>
         <p>Photoshop <span class="estrella">★★★★</span></p>
         <p>Illustrator <span class="estrella">★★★★</span></p>
         <p>After Effects <span class="estrella">★★</span></p>
       </section>
-
 
       <section id="idiomas" class="contenido">
         <h4>Idiomas</h4>
@@ -78,36 +72,26 @@
     </div>
   </main>
 
- <footer>
-  <p>&copy; 2025 Luciana | Portfolio académico - Computación III - UNLa | Buenos Aires, Argentina</p>
-</footer>
+  <footer id="contacto">
+    <p>&copy; 2025 Luciana | Portfolio académico - Computación III - UNLa | Buenos Aires, Argentina</p>
+  </footer>
 
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const enlaceSobreMi = document.querySelector('nav.nav-left a[href="#sobre-mi"]');
-    const secciones = document.querySelector('.secciones-horizontales');
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const secciones = document.querySelector('.secciones-horizontales');
 
-   
-    enlaceSobreMi.addEventListener("click", function () {
-      setTimeout(() => {
-        secciones.classList.add('animar');
-      }, 500); // 
-    });
-
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          secciones.classList.add('animar');
-        }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            secciones.classList.add('animar');
+          }
+        });
+      }, {
+        threshold: 0.3
       });
-    }, {
-      threshold: 0.3 
+
+      observer.observe(secciones);
     });
-
-    observer.observe(secciones);
-  });
-</script>
-
-</html> 
+  </script>
+</body>
+</html>
