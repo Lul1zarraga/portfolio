@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Oswald:wght@500;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
 
 body {
   margin: 0;
@@ -6,6 +6,7 @@ body {
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
   color: white;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -27,6 +28,19 @@ header {
   font-size: 18px;
 }
 
+/* Efecto para los links del menú (nav-left) */
+.nav-left a {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-left a:hover {
+  transform: scale(1.2);
+  color: #fcd22b; /* color amarillo dorado */
+  font-weight: 700;
+}
+
+/* Efecto para los iconos del nav-right */
 .nav-right a img {
   width: 40px;
   height: 40px;
@@ -71,11 +85,9 @@ header {
 .sobre-mi h3 {
   font-size: 60px;
   color: rgb(253, 116, 3);
-  text-align: left;
-  position: relative;
-  top: -40px; 
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
+
 .sobre-mi p {
   font-size: 18px;
   color: black;
@@ -83,7 +95,6 @@ header {
   margin: 0 auto;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
-  
 }
 
 .secciones-horizontales {
@@ -142,13 +153,9 @@ header {
   animation-delay: 0.8s;
 }
 
-
 .contenido h4 {
-  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   margin-bottom: 12px;
-  font-weight: 700; 
-  text-transform: uppercase;
 }
 
 .contenido p {
