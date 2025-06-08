@@ -98,6 +98,12 @@ header {
     transform: translateX(-100%);
   }
 }
+main {
+  padding: 0 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+}
 
 #sobre-mi {
   max-width: 700px;
@@ -139,14 +145,13 @@ header {
 
 footer {
   display: flex;
-  justify-content: center; 
-  gap: 40px; 
+  justify-content: center;
+  gap: 90px; 
   padding: 20px 0;
   background-color: #000000;
-  color: rgb(255, 255, 255);
-  font-family: 'Roboto', sans-serif;
 }
 
 footer p {
-  margin: 0; 
+  margin: 0;
+  color: #ffffff; 
 }
