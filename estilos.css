@@ -147,7 +147,7 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  gap: 90px; 
+  gap: 150px; 
   padding: 20px 0;
   background-color: #000000;
 }
