@@ -1,12 +1,14 @@
-ahora esta asi body {
+body {
   margin: 0;
   padding: 0;  
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
+
 a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 } 
+
 h1 {
   color: rgb(253, 116, 3);
   font-size: 310px;
@@ -14,11 +16,13 @@ h1 {
   display: inline-block;
   animation: mover 5s linear infinite;
 }
+
 h2 {
   font-family: 'Travels', sans-serif;
   font-size: 2rem; 
   font-weight: 200; 
 }
+
 h3 {
   font-size: 60px;
   color: rgb(253, 116, 3);
@@ -80,8 +84,7 @@ header {
   transform: scale(1.2);
 }
 
-
- #texto-fijo {
+#texto-fijo {
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   color: rgb(253, 116, 3);
@@ -93,6 +96,7 @@ header {
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
+
 .portfolio-intro {
   position: relative; 
   height: 100vh;
@@ -103,7 +107,6 @@ header {
   padding: 0 20px;
   box-sizing: border-box;
 }
-
 
 .titulo-animado-portfolio {
   display: inline-block;
@@ -122,8 +125,8 @@ header {
     transform: translateX(-100%);
   }
 }
+
 main {
- 
   max-width: 1700px; 
   margin: 0 auto; 
   box-sizing: border-box; 
@@ -134,6 +137,7 @@ main {
   padding: 24px;
   margin: 0;
 }
+
 #sobre-mi h2 {
   margin-bottom: 8px; 
 }
@@ -146,7 +150,6 @@ main {
   padding-left: 16px;
   margin: 32px 16px;
 }
-
 
 .perfil-columnas {
   display: flex;
@@ -170,11 +173,9 @@ main {
   line-height: 1.2;
 }
 
-
 .perfil-bloque p {
   margin: 6px 0;
 }
-
 
 footer {
   display: flex;
@@ -187,4 +188,4 @@ footer {
 footer p {
   margin: 0;
   color: #ffffff; 
-}  
+}
