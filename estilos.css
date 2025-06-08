@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
 
 body {
   margin: 0;
@@ -70,7 +70,7 @@ header {
   font-family: 'tt-travels-next', sans-serif;
   font-size: 310px;
   color: rgb(253, 116, 3);
-  animation: mover 5s linear infinite;
+  animation: mover 7s linear infinite;
 }
 
 @keyframes mover {
@@ -125,11 +125,11 @@ header {
 
 .contenido {
   background-color: rgb(253, 116, 3);
-  border-radius: 20px;
-  padding: 18px 28px;
-  flex: 1 1 280px;
-  max-width: 380px;
-  box-shadow: 0 0 15px rgba(253, 116, 3, 0.3);
+  border-radius: 12px;
+  padding: 18px;
+  flex: 1 1 220px;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   color: white;
   line-height: 1.6;
   opacity: 0;
@@ -167,17 +167,6 @@ header {
   font-family: 'Antonio', sans-serif;
   font-size: 37px;
   margin-bottom: 12px;
-  color: white;
-}
-
-
-.contenido h4.experiencia, 
-.contenido h4.manejo-adobe,
-.contenido h4.idiomas {
-  font-family: 'Ruda', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 14px;
   color: white;
 }
 
