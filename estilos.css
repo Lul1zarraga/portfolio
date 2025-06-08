@@ -83,7 +83,7 @@ header {
   font-family: 'tt-travels-next', sans-serif;
   padding: 0 20px; /* para que no quede pegado a los bordes */
   max-width: 800px; /* ancho máximo para que no quede muy ancho */
-  margin: 0 auto 60px auto; /* centra la sección horizontalmente y da margen abajo */
+  margin: 0 auto 4px auto; /* centra la sección horizontalmente y da margen abajo */
 }
 
 .sobre-mi h3 {
