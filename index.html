@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
 
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&family=Antonio&display=swap" rel="stylesheet" />
-
-  <!-- CSS propio -->
+  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
@@ -37,21 +36,43 @@
 
   <main>
     <section class="inicio">
-      <!-- Aquí está el carrusel horizontal en loop -->
-      <h1 class="portfolio-carrusel">
-        Portfolio &nbsp; Portfolio &nbsp; Portfolio &nbsp; Portfolio &nbsp; Portfolio &nbsp; Portfolio &nbsp; Portfolio &nbsp; Portfolio
-      </h1>
+      <h1>Portfolio</h1>
     </section>
 
-    <section class="sobre-mi" id="sobre-mi">
-      <h3>Sobre mí</h3>
-      <p>
-        ¡Hola! Soy Luciana Lizárraga, una diseñadora gráfica apasionada por las artes visuales y la comunicación. 
-        Estudio Diseño Gráfico en la UNLa y disfruto combinando creatividad con funcionalidad en mis proyectos.
-      </p>
-    </section>
+    <div class="contenido-principal">
+      <section id="sobre-mi" class="sobre-mi">
+        <h3>Sobre mí</h3>
+        <p>
+          Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
+        </p>
+      </section>
 
-    <!-- Más secciones... -->
+      <div class="secciones-horizontales" id="proyectos">
+        <section id="formacion" class="contenido">
+          <h4>Formación</h4>
+          <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
+          <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
+        </section>
+
+        <section id="experiencia-laboral" class="contenido">
+          <h4>Experiencia laboral</h4>
+          <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
+        </section>
+
+        <section id="habilidades-informaticas" class="contenido">
+          <h4>Manejo de Adobe:</h4>
+          <p>InDesign <span class="estrella">★★★★</span></p>
+          <p>Photoshop <span class="estrella">★★★★</span></p>
+          <p>Illustrator <span class="estrella">★★★★</span></p>
+          <p>After Effects <span class="estrella">★★</span></p>
+        </section>
+
+        <section id="idiomas" class="contenido">
+          <h4>Idiomas</h4>
+          <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer id="contacto">
@@ -61,5 +82,23 @@
       <span>Buenos Aires, Argentina</span>
     </p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const secciones = document.querySelector('.secciones-horizontales');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            secciones.classList.add('animar');
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(secciones);
+    });
+  </script>
 </body>
 </html>
