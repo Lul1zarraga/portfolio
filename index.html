@@ -3,106 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-
-  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="estilos.css" />
+  <title>Tu Página</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <nav class="nav-left">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+<header>
+  <nav class="nav-left">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#secciones">Secciones</a>
+  </nav>
+  <nav class="nav-right">
+    <a href="https://github.com" target="_blank" rel="noopener">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" />
+    </a>
+  </nav>
+</header>
 
-    <nav class="nav-right">
-      <a href="https://www.instagram.com/lulizarraga_" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-instagram.svg" alt="Instagram" />
-      </a>
-      <a href="https://www.behance.net/lucianalizarra1" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-behance.svg" alt="Behance" />
-      </a>
-      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-gmail.svg" alt="Gmail" />
-      </a>
-    </nav>
-  </header>
+<section class="inicio" id="inicio">
+  <div class="marquee">
+    <span>Tu Texto Gigante Animado 🧡 Tu Texto Gigante Animado 🧡</span>
+  </div>
+</section>
 
-  <section class="inicio">
-    <div class="marquee">
-      <span>Portfolio&nbsp;</span>
-      <span>Portfolio&nbsp;</span>
-      <span>Portfolio&nbsp;</span>
-    </div>
-  </section>
+<section class="sobre-mi" id="sobre-mi">
+  <h3>Sobre mí</h3>
+  <p>Acá podés escribir un párrafo corto que describa quién sos, qué hacés, o lo que quieras contar.</p>
+</section>
 
-  <main>
-    <section id="sobre-mi" class="sobre-mi">
-      <h3>Sobre mí</h3>
-      <p>
-        Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
-      </p>
-    </section>
+<section class="secciones-horizontales" id="secciones">
+  <article class="contenido">
+    <h4>Sección 1</h4>
+    <p>Contenido de la primera sección.</p>
+  </article>
+  <article class="contenido">
+    <h4>Sección 2</h4>
+    <p>Contenido de la segunda sección.</p>
+  </article>
+  <article class="contenido">
+    <h4>Sección 3</h4>
+    <p>Contenido de la tercera sección.</p>
+  </article>
+  <article class="contenido">
+    <h4>Sección 4</h4>
+    <p>Contenido de la cuarta sección.</p>
+  </article>
+</section>
 
-    <div class="secciones-horizontales" id="proyectos">
-      <section class="contenido">
-        <h4>Formación</h4>
-        <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
-        <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
-      </section>
+<footer>
+  <p>© 2025 Tu Nombre — <a href="#inicio" style="color: white; text-decoration: underline;">Volver arriba</a></p>
+</footer>
 
-      <section class="contenido">
-        <h4>Experiencia laboral</h4>
-        <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
-      </section>
-
-      <section class="contenido">
-        <h4>Manejo de Adobe:</h4>
-        <p>InDesign <span class="estrella">★★★★</span></p>
-        <p>Photoshop <span class="estrella">★★★★</span></p>
-        <p>Illustrator <span class="estrella">★★★★</span></p>
-        <p>After Effects <span class="estrella">★★</span></p>
-      </section>
-
-      <section class="contenido">
-        <h4>Idiomas</h4>
-        <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
-      </section>
-    </div>
-  </main>
-
-  <footer id="contacto">
-    <p>
-      <span>© 2025 Luciana</span>
-      <span>Portfolio académico - Computación III - UNLa</span>
-      <span>Buenos Aires, Argentina</span>
-    </p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const secciones = document.querySelector('.secciones-horizontales');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            secciones.classList.add('animar');
-          }
-        });
-      }, {
-        threshold: 0.3
-      });
-
-      observer.observe(secciones);
-    });
-  </script>
+<script>
+  // Animar secciones cuando se cargue la página
+  window.addEventListener('load', () => {
+    document.querySelector('.secciones-horizontales').classList.add('animar');
+  });
+</script>
 
 </body>
 </html>
