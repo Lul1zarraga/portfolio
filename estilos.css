@@ -31,7 +31,62 @@ header {
 .nav-left a,
 .nav-right a {
   color: #000;
-  text-decoration: none;
+  text-decoration: none;.slider-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #F58923;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.slider {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: slideLeft 15s linear infinite;
+  font-family: 'Antonio', sans-serif;
+  font-size: 48px;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
+.slider span {
+  padding: 0 40px;
+  user-select: none;
+  transform-origin: center;
+  animation: wave 3s ease-in-out infinite alternate;
+}
+
+.slider span:nth-child(odd) {
+  animation-delay: 0s;
+}
+
+.slider span:nth-child(even) {
+  animation-delay: 1.5s;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
   margin: 0 10px;
 }
 
