@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +32,14 @@ p {
   color: #000000;
 }
 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
 header .menu-navegacion {
   display: flex;
   gap: 32px;
@@ -38,28 +47,21 @@ header .menu-navegacion {
 
 header .menu-navegacion a {
   font-family: 'Roboto', sans-serif;
-  color: rgb(253, 116, 3); 
+  color: rgb(253, 116, 3);
   font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
 }
 
 header .menu-navegacion a:hover {
-  color: rgb(253, 116, 3); 
+  color: rgb(253, 116, 3);
   transform: scale(1.2);
   font-weight: 700;
 }
 
-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 16px 32px;
-}
-
 .nav-social-iconos {
-  display: flex; 
-  gap: 20px; 
+  display: flex;
+  gap: 20px;
   align-items: center;
 }
 
@@ -71,14 +73,15 @@ header {
   transform: scale(1.2);
 }
 
+
 .portfolio-intro {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 0 20px; 
-  box-sizing: border-box; 
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .titulo-animado-portfolio {
@@ -98,6 +101,8 @@ header {
     transform: translateX(-100%);
   }
 }
+
+
 #sobre-mi {
   max-width: 700px;
   margin: 0 auto;
@@ -118,6 +123,7 @@ header {
   margin: 32px 16px;
 }
 
+
 .perfil-columnas {
   display: flex;
   gap: 24px;
@@ -127,14 +133,15 @@ header {
 
 .perfil-bloque {
   background-color: transparent;
-    padding: 16px;
+  padding: 16px;
   border-radius: 8px;
   flex: 1 1 250px;
 }
+
 #perfil-profesional {
   display: flex;
   gap: 20px;
-  max-width: 900px; 
+  max-width: 900px;
   margin: 40px auto;
   opacity: 0;
   transform: translateX(-100%);
@@ -144,7 +151,7 @@ header {
 
 #perfil-profesional .perfil-bloque {
   flex: 1 1 200px;
-  background-color:  transparent;
+  background-color: transparent;
   border-radius: 12px;
   padding: 18px;
   line-height: 1.5;
@@ -155,5 +162,63 @@ header {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+.secciones-horizontales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.secciones-horizontales.animar {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contenido {
+  background-color: #fd7403;
+  border-radius: 12px;
+  padding: 18px;
+  flex: 1 1 220px;
+  max-width: 280px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.contenido h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contenido p {
+  color: white;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .contenido {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  header .menu-navegacion {
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -1,19 +1,19 @@
+const seccion = document.querySelector(".secciones-horizontales");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting) {
+      seccion.classList.add("animar");
+    }
+  },
+  { threshold: 0.3 }
+);
+
+observer.observe(seccion);
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const secciones = document.querySelector('.secciones-horizontales');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            secciones.classList.add('animar');
-          }
-        });
-      }, {
-        threshold: 0.3
-      });
-
-      observer.observe(secciones);
-    });
-  </script>
+document.querySelector('a[href="#perfil-profesional"]').addEventListener("click", () => {
+  setTimeout(() => {
+    seccion.classList.add("animar");
+  }, 500); 
+});
