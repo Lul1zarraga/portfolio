@@ -130,7 +130,7 @@ header {
 
 main {
   display: flex;
-  gap: 40px;
+  gap: 400px;
   max-width: 1700px;
   margin: 0 auto;
   padding: 24px;
@@ -140,8 +140,6 @@ main {
 #sobre-mi {
   flex: 1 1 50%;
   max-width: 600px;
-  padding: 0; 
-  margin: 0;
 }
 
 #sobre-mi h2 {
@@ -149,10 +147,9 @@ main {
 }
 
 .perfil-columnas {
-  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 400px;
   padding: 0; 
 }
 
