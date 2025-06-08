@@ -101,12 +101,10 @@ header {
 
 #sobre-mi {
   max-width: 700px;
-  margin: none;
+  margin: 0;
 }
-
-.seccion-sobre-mi p {
-  color: white;
-  font-family: 'Roboto', sans-serif;
+#sobre-mi h2 {
+  margin-bottom: 8px; 
 }
 
 .cita-lateral blockquote {
@@ -131,29 +129,24 @@ header {
   border-radius: 8px;
   flex: 1 1 250px;
 }
-#sobre-mi p {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 8px;  /* menos espacio arriba */
-  margin-bottom: 8px; /* menos espacio abajo */
-}
+
 
 .perfil-bloque p {
-  margin-top: 6px;  /* menos espacio arriba */
-  margin-bottom: 6px; /* menos espacio abajo */
+  margin-top: 6px; 
+  margin-bottom: 6px; 
 }
 
-/* Footer para que los párrafos estén en fila, con espacio entre ellos */
+
 footer {
   display: flex;
-  justify-content: center; /* centrado horizontal */
-  gap: 40px; /* espacio entre los textos */
+  justify-content: center; 
+  gap: 40px; 
   padding: 20px 0;
-  background-color: #222; /* o el que uses, para que se note */
-  color: white;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
 }
 
 footer p {
-  margin: 0; /* que no tengan margen propio para que se alineen bien */
+  margin: 0; 
 }
