@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
 
 body {
   margin: 0;
@@ -198,19 +198,28 @@ footer p {
   .contenido {
     max-width:100%;
   }
+} .marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 30px 0;
+}
 
-  .marquee {
-    display: flex;
-    gap: 40px;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 30px 0;
-    animation: moverMarquee 8s linear forwards; 
+.marquee span {
+  display: inline-block;
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 310px;
+  color: rgb(253, 116, 3);
+  animation: mover 10s linear infinite;
+}
+
+@keyframes mover {
+  from {
+    transform: translateX(0%);
   }
-
-  .marquee span {
-    font-family: 'tt-travels-next', sans-serif;
-    font-size: 250px;
-    color: rgb(253, 116, 3);
+  to {
+    transform: translateX(100%);
   }
 }
