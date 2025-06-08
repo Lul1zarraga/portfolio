@@ -4,12 +4,32 @@ body {
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
 
-h1 {
-  color: rgb(253, 116, 3);
+h1.titulo-animado-portfolio {
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
+  color: rgb(253, 116, 3);
+  white-space: nowrap;
+}
+
+.portfolio-movimiento {
   display: inline-block;
-  animation: mover 5s linear infinite;
+  animation: mover 7s linear infinite;
+  font-weight: normal;
+}
+
+.portfolio-fijo {
+  font-weight: 700;
+  display: inline-block;
+  position: relative; 
+  left: 0; 
+ }
+@keyframes mover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 h2 {
@@ -80,25 +100,6 @@ header {
   padding: 0 20px; 
   box-sizing: border-box; 
 }
-
-.titulo-animado-portfolio {
-  display: inline-block;
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
-  color: rgb(253, 116, 3);
-  white-space: nowrap;
-  animation: mover 7s linear infinite;
-}
-
-@keyframes mover {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 
 .cita-lateral blockquote {
   font-family: 'Roboto', sans-serif;
