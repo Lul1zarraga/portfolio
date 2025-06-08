@@ -80,15 +80,30 @@ header {
   transform: scale(1.2);
 }
 
+
+ #texto-fijo {
+  font-size: 310px;
+  font-family: 'tt-travels-next', sans-serif;
+  color: rgb(253, 116, 3);
+  text-align: center;
+  margin: 0;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 .portfolio-intro {
+  position: relative; 
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 0 20px; 
-  box-sizing: border-box; 
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
 
 .titulo-animado-portfolio {
   display: inline-block;
@@ -96,7 +111,7 @@ header {
   font-family: 'tt-travels-next', sans-serif;
   color: rgb(253, 116, 3);
   white-space: nowrap;
-  animation: mover 5s linear infinite;
+  animation: mover 5s linear 2;
 }
 
 @keyframes mover {
