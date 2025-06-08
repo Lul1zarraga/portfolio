@@ -4,12 +4,32 @@ body {
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
 
-h1 {
-  color: rgb(253, 116, 3);
+h1.titulo-animado-portfolio {
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
+  color: rgb(253, 116, 3);
+  white-space: nowrap;
+}
+
+.portfolio-movimiento {
   display: inline-block;
-  animation: mover 5s linear infinite;
+  animation: mover 7s linear infinite;
+  font-weight: normal;
+}
+
+.portfolio-fijo {
+  font-weight: 700;
+  display: inline-block;
+  position: relative; 
+  left: 0; 
+ }
+@keyframes mover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 h2 {
@@ -38,14 +58,14 @@ header .menu-navegacion {
 
 header .menu-navegacion a {
   font-family: 'Roboto', sans-serif;
-  color: rgb(253, 116, 3); 
+  color: rgb(253, 116, 3);
   font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
 }
 
 header .menu-navegacion a:hover {
-  color: rgb(253, 116, 3); 
+  color: rgb(253, 116, 3);
   transform: scale(1.2);
   font-weight: 700;
 }
@@ -81,35 +101,6 @@ header {
   box-sizing: border-box; 
 }
 
-.titulo-animado-portfolio {
-  display: inline-block;
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
-  color: rgb(253, 116, 3);
-  white-space: nowrap;
-  animation: mover 5s linear infinite;
-}
-
-@keyframes mover {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-#sobre-mi {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.seccion-sobre-mi p {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
 .cita-lateral blockquote {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
@@ -127,8 +118,9 @@ header {
 }
 
 .perfil-bloque {
-  background-color: transparent;
+  background-color: rgb(253, 116, 3);
   padding: 16px;
   border-radius: 8px;
   flex: 1 1 250px;
+  color: white;
 }
