@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
 
 body {
   margin: 0;
@@ -28,7 +28,6 @@ header {
   font-size: 18px;
 }
 
-/* Efecto para los links del menú (nav-left) */
 .nav-left a {
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
@@ -39,7 +38,6 @@ header {
   font-weight: 700;
 }
 
-/* Efecto para los iconos del nav-right */
 .nav-right a img {
   width: 40px;
   height: 40px;
@@ -55,36 +53,44 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.inicio h1 {
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
   font-family: 'tt-travels-next', sans-serif;
-  font-size: 120px;
+  font-size: 310px;
   color: rgb(253, 116, 3);
-  animation: aparecer 1.5s ease forwards;
-  opacity: 0;
+  animation: mover 15s linear infinite;
 }
 
-@keyframes aparecer {
+@keyframes mover {
   from {
-    opacity: 0;
-    transform: translateY(40px);
+    transform: translateX(0%);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-100%);
   }
 }
 
 .sobre-mi {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* todo alineado a la izquierda */
+  align-items: flex-start;
   text-align: left;
   font-family: 'tt-travels-next', sans-serif;
-  padding: 0 20px; /* para que no quede pegado a los bordes */
-  max-width: 800px; /* ancho máximo para que no quede muy ancho */
-  margin: 0 auto 4px auto; /* centra la sección horizontalmente y da margen abajo */
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto 4px auto;
 }
 
 .sobre-mi h3 {
@@ -159,9 +165,9 @@ header {
 
 .contenido h4 {
   font-family: 'Antonio', sans-serif;
-  font-size: 37px; 
+  font-size: 37px;
   margin-bottom: 12px;
-  color: white; 
+  color: white;
 }
 
 .contenido p {
@@ -196,30 +202,10 @@ footer p {
   }
 
   .contenido {
-    max-width:100%;
+    max-width: 100%;
   }
-} .marquee {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  background: transparent;
-  padding: 30px 0;
-}
 
-.marquee span {
-  display: inline-block;
-  font-family: 'tt-travels-next', sans-serif;
-  font-size: 310px;
-  color: rgb(253, 116, 3);
-  animation: mover 10s linear infinite;
-}
-
-@keyframes mover {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(100%);
+  .marquee span {
+    font-size: 100px;
   }
 }
