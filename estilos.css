@@ -4,7 +4,9 @@ body {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
-
+a, a:hover, a:focus {
+  cursor: url("img/cursor-personalizado.svg") 20 20, auto;
+} 
 h1 {
   color: rgb(253, 116, 3);
   font-size: 310px;
