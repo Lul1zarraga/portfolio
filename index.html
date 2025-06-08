@@ -5,161 +5,98 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+  
   <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet" />
-
+  
   <link rel="stylesheet" href="estilos.css" />
-
-  <style>
-
-    #splash {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease;
-      user-select: none;
-    }
-
-    #splash.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    #splash h1 {
-      font-size: 310px;
-      font-weight: 700;
-      color: rgb(253, 116, 3);
-      margin: 0;
-      white-space: nowrap;
-      cursor: pointer;
-      font-family: 'tt-travels-next', sans-serif;
-    }
-
-    @media (max-width: 600px) {
-      #splash h1 {
-        font-size: 80px;
-      }
-    }
-
-    #main-content {
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
+  <header>
+    <nav class="menu-navegacion">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
+    <nav class="nav-social-iconos">
+      <a href="https://www.instagram.com/lulizarraga_" target="_blank">
+        <img src="img/icono-instagram.svg" width="50" height="50" alt="icono de la red social instagram" />
+      </a>
+      <a href="https://www.behance.net/lucianalizarra1" target="_blank">
+        <img src="img/icono-behance.svg" width="50" height="50" alt="icono de la red social behance" />
+      </a>
+      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank">
+        <img src="img/icono-linkedin.svg" width="50" height="50" alt="icono de la red social linkedIn" />
+      </a>
+      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank">
+        <img src="img/icono-gmail.svg" width="50" height="50" alt="icono del servicio en linea gmail" />
+      </a>
+    </nav>
+  </header>
 
-  <div id="splash">
-    <h1 id="portfolioTitle">Portfolio</h1>
-  </div>
+  <section class="portfolio-intro">
+    <div class="titulo-animado-portfolio">
+      <span>Portfolio&nbsp;</span>
+      <span aria-hidden="true">Portfolio&nbsp;</span>
+      <span aria-hidden="true">Portfolio&nbsp;</span>
+    </div>
+  </section>
 
-
-  <div id="main-content">
-    <header>
-      <nav class="menu-navegacion">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-
-      <nav class="nav-social-iconos">
-        <a href="https://www.instagram.com/lulizarraga_" target="_blank">
-          <img src="img/icono-instagram.svg" width="50" height="50" alt="icono de la red social instagram" />
-        </a>
-        <a href="https://www.behance.net/lucianalizarra1" target="_blank">
-          <img src="img/icono-behance.svg" width="50" height="50" alt="icono de la red social behance" />
-        </a>
-        <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank">
-          <img src="img/icono-linkedin.svg" width="50" height="50" alt="icono de la red social linkedIn" />
-        </a>
-        <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank">
-          <img src="img/icono-gmail.svg" width="50" height="50" alt="icono del servicio en linea gmail" />
-        </a>
-      </nav>
-    </header>
-
-    <section class="portfolio-intro">
-      <h1 class="titulo-animado-portfolio">Portfolio</h1>
+  <main>
+    <section id="sobre-mi" class="seccion-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
+      </p>
     </section>
 
-    <main>
-      <section id="sobre-mi" class="seccion-sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
-        </p>
+    <aside class="cita-lateral">
+      <blockquote>
+        "Diseño con intención, comunico con pasión."
+      </blockquote>
+    </aside>
+
+    <div id="perfil-profesional" class="perfil-columnas">
+      <section id="formacion-academica" class="perfil-bloque">
+        <h3>Formación Académica</h3>
+        <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
+        <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
       </section>
 
-      <aside class="cita-lateral">
-        <blockquote>
-          "Diseño con intención, comunico con pasión."
-        </blockquote>
-      </aside>
+      <section id="experiencia-laboral" class="perfil-bloque">
+        <h3>Experiencia Laboral</h3>
+        <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
+      </section>
 
-      <div id="perfil-profesional" class="perfil-columnas">
-        <section id="formacion-academica" class="perfil-bloque">
-          <h3>Formación Académica</h3>
-          <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
-          <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
-        </section>
+      <section id="habilidades-software" class="perfil-bloque">
+        <h3>Habilidades en Software</h3>
+        <p>InDesign <span class="estrella">★★★★</span></p>
+        <p>Photoshop <span class="estrella">★★★★</span></p>
+        <p>Illustrator <span class="estrella">★★★★</span></p>
+        <p>After Effects <span class="estrella">★★</span></p>
+      </section>
 
-        <section id="experiencia-laboral" class="perfil-bloque">
-          <h3>Experiencia Laboral</h3>
-          <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
-        </section>
+      <section id="idiomas" class="perfil-bloque">
+        <h3>Idiomas</h3>
+        <p>Español: Nativo</p>
+        <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
+      </section>
+    </div>
+  </main>
 
-        <section id="habilidades-software" class="perfil-bloque">
-          <h3>Habilidades en Software</h3>
-          <p>InDesign <span class="estrella">★★★★</span></p>
-          <p>Photoshop <span class="estrella">★★★★</span></p>
-          <p>Illustrator <span class="estrella">★★★★</span></p>
-          <p>After Effects <span class="estrella">★★</span></p>
-        </section>
+  <footer id="contacto">
+    <p>© 2025 Luciana</p>
+    <p>Portfolio académico - Computación III - UNLa</p>
+    <p>Buenos Aires, Argentina</p>
+  </footer>
 
-        <section id="idiomas" class="perfil-bloque">
-          <h3>Idiomas</h3>
-          <p>Español: Nativo</p>
-          <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
-        </section>
-      </div>
-    </main>
-
-    <footer id="contacto">
-      <p>© 2025 Luciana</p>
-      <p>Portfolio académico - Computación III - UNLa</p>
-      <p>Buenos Aires, Argentina</p>
-    </footer>
-  </div>
-
-  <script>
-    const splash = document.getElementById('splash');
-    const mainContent = document.getElementById('main-content');
-
-    function hideSplash() {
-      splash.classList.add('hidden');
-      setTimeout(() => {
-        splash.style.display = 'none';
-        mainContent.style.display = 'block';
-      }, 500); //
-    }
-
-
-    setTimeout(hideSplash, 3000);
-
-
-    document.getElementById('portfolioTitle').addEventListener('click', hideSplash);
-  </script>
   <script src="script.js"></script>
 </body>
 
