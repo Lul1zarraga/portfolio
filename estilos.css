@@ -128,7 +128,10 @@ main {
   gap: 24px;
   padding: 24px 16px;
   flex-wrap: wrap;
+  align-items: flex-start; 
 }
+
+
 
 .perfil-bloque {
   background-color: transparent;
@@ -136,18 +139,21 @@ main {
   border-radius: 8px;
   flex: 1 1 250px;
 }
+.perfil-bloque h3 {
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
 
 
 .perfil-bloque p {
-  margin-top: 6px; 
-  margin-bottom: 6px; 
+  margin: 6px 0;
 }
 
 
 footer {
   display: flex;
   justify-content: center;
-  gap: 150px; 
+  gap: 480px; 
   padding: 20px 0;
   background-color: #000000;
 }
