@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap');
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
-  color: white;
 }
 
 header {
@@ -75,15 +72,16 @@ header {
     transform: translateY(0);
   }
 }
+
 .sobre-mi {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* todo alineado a la izquierda */
+  align-items: flex-start;
   text-align: left;
   font-family: 'tt-travels-next', sans-serif;
-  padding: 0 20px; /* para que no quede pegado a los bordes */
-  max-width: 800px; /* ancho máximo para que no quede muy ancho */
-  margin: 0 auto 4px auto; /* centra la sección horizontalmente y da margen abajo */
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto 4px auto;
 }
 
 .sobre-mi h3 {
@@ -158,41 +156,11 @@ header {
 
 .contenido h4 {
   font-family: 'Antonio', sans-serif;
-  font-size: 37px; 
+  font-size: 37px;
   margin-bottom: 12px;
-  color: white; 
+  color: white;
 }
 
 .contenido p {
   margin-bottom: 8px;
-  font-size: 18px;
-}
-
-footer {
-  background-color: #aa063d;
-  text-align: center;
-  padding: 16px;
-  color: white;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-}
-footer p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .inicio h1 {
-    font-size: 64px;
-    text-align: center;
-  }
-
-  .contenido {
-    max-width: 100%;
-  }
-}
+  font
