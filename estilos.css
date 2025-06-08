@@ -182,10 +182,10 @@ footer p {
   color: white;
   display: flex;
   justify-content: center;
-  gap: 16px; /* espacio entre las partes */
+  gap: 16px; /* espacio entre partes */
   margin: 0;
-  flex-wrap: wrap; /* para que no se rompa en pantallas chicas */
-} 
+  flex-wrap: wrap;
+}
 @media (max-width: 768px) {
   .inicio h1 {
     font-size: 64px;
