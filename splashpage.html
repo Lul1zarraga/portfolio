@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Splash</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'tt-travels-next', sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 310px;
+      font-weight: 700;
+      color: rgb(253, 116, 3);
+      margin: 0;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.5s ease;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="portfolioTitle">Portfolio</h1>
+
+  <script>
+
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 3000);
+
+    document.getElementById('portfolioTitle').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+
+</html>
