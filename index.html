@@ -1,109 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
   <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
-  <!-- Agregamos Ruda -->
   <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="estilos.css" />
 </head>
-<body>
 
+<body>
   <header>
-    <nav class="nav-left">
+    <nav class="menu-navegacion">
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
-    <nav class="nav-right">
-      <a href="https://www.instagram.com/lulizarraga_" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-instagram.svg" alt="Instagram" />
+    <nav class="nav-social-iconos">
+      <a href="https://www.instagram.com/lulizarraga_" target="_blank">
+        <img src="img/icono-instagram.svg" width="50" height="50" alt="icono de la red social instagram" />
       </a>
-      <a href="https://www.behance.net/lucianalizarra1" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-behance.svg" alt="Behance" />
+      <a href="https://www.behance.net/lucianalizarra1" target="_blank">
+        <img src="img/icono-behance.svg" width="50" height="50" alt="icono de la red social behance" />
       </a>
-      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-linkedin.svg" alt="LinkedIn" />
+      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank">
+        <img src="img/icono-linkedin.svg" width="50" height="50" alt="icono de la red social linkedIn" />
       </a>
-      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank" rel="noopener noreferrer">
-        <img src="img/icono-gmail.svg" alt="Gmail" />
+      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank">
+        <img src="img/icono-gmail.svg" width="50" height="50" alt="icono del servicio en linea gmail" />
       </a>
     </nav>
   </header>
 
-  <section class="inicio">
-    <div class="marquee">
-      <span>Portfolio&nbsp;</span>
-      <span>Portfolio&nbsp;</span>
-      <span>Portfolio&nbsp;</span>
-    </div>
-  </section>
+<section class="portfolio-intro">
+  <h1 class="titulo-animado-portfolio">
+    <span>Portfolio&nbsp;</span>
+    <span aria-hidden="true">Portfolio&nbsp;</span>
+    <span aria-hidden="true">Portfolio&nbsp;</span>
+  </h1>
+</section>
 
   <main>
-    <section id="sobre-mi" class="sobre-mi">
-      <h3>Sobre mí</h3>
+    <section id="sobre-mi" class="seccion-sobre-mi">
+      <h2>Sobre mí</h2>
       <p>
         Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
       </p>
     </section>
 
-    <div class="secciones-horizontales" id="proyectos">
-      <section id="formacion" class="contenido">
-        <h4>Formación</h4>
+    <aside class="cita-lateral">
+      <blockquote>
+        "Diseño con intención, comunico con pasión."
+      </blockquote>
+    </aside>
+
+    <div id="perfil-profesional" class="perfil-columnas">
+      <section id="formacion-academica" class="perfil-bloque">
+        <h3>Formación Académica</h3>
         <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
         <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
       </section>
 
-      <section id="experiencia-laboral" class="contenido">
-        <h4 class="ruda">Experiencia laboral</h4>
+      <section id="experiencia-laboral" class="perfil-bloque">
+        <h3>Experiencia Laboral</h3>
         <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
       </section>
 
-      <section id="habilidades-informaticas" class="contenido">
-        <h4 class="ruda">Manejo de Adobe:</h4>
+      <section id="habilidades-software" class="perfil-bloque">
+        <h3>Habilidades en Software</h3>
         <p>InDesign <span class="estrella">★★★★</span></p>
         <p>Photoshop <span class="estrella">★★★★</span></p>
         <p>Illustrator <span class="estrella">★★★★</span></p>
         <p>After Effects <span class="estrella">★★</span></p>
       </section>
 
-      <section id="idiomas" class="contenido">
-        <h4 class="ruda">Idiomas</h4>
+      <section id="idiomas" class="perfil-bloque">
+        <h3>Idiomas</h3>
+        <p>Español: Nativo</p>
         <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
       </section>
     </div>
   </main>
 
   <footer id="contacto">
-    <p>
-      <span>© 2025 Luciana</span>
-      <span>Portfolio académico - Computación III - UNLa</span>
-      <span>Buenos Aires, Argentina</span>
-    </p>
+    <p>© 2025 Luciana</p>
+    <p>Portfolio académico - Computación III - UNLa</p>
+    <p>Buenos Aires, Argentina</p>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const secciones = document.querySelector('.secciones-horizontales');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            secciones.classList.add('animar');
-          }
-        });
-      }, {
-        threshold: 0.3
-      });
-
-      observer.observe(secciones);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
