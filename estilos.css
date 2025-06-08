@@ -126,46 +126,42 @@ header {
   }
 }
 
+
+
 main {
-  max-width: 1700px; 
-  margin: 0 auto; 
-  box-sizing: border-box; 
+  display: flex;
+  gap: 40px;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
 #sobre-mi {
-  max-width: 900px;
-  padding: 24px;
+  flex: 1 1 50%;
+  max-width: 600px;
+  padding: 0; 
   margin: 0;
 }
 
 #sobre-mi h2 {
-  margin-bottom: 8px; 
-}
-
-.cita-lateral blockquote {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  color: rgb(253, 116, 3);
-  border-left: 4px solid rgb(253, 116, 3);
-  padding-left: 16px;
-  margin: 32px 16px;
+  margin-bottom: 8px;
 }
 
 .perfil-columnas {
+  flex: 1 1 50%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 24px;
-  padding: 24px 16px;
+  padding: 0; 
 }
 
 .perfil-bloque {
   background-color: transparent;
   padding: 16px;
   border-radius: 8px;
-  flex: 1 1 calc(25% - 24px); 
+  width: 100%;
   box-sizing: border-box;
-  min-width: 250px; 
 }
 
 .perfil-bloque h3 {
@@ -175,6 +171,15 @@ main {
 
 .perfil-bloque p {
   margin: 6px 0;
+}
+
+.cita-lateral blockquote {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: rgb(253, 116, 3);
+  border-left: 4px solid rgb(253, 116, 3);
+  padding-left: 16px;
+  margin: 32px 16px;
 }
 
 footer {
@@ -188,4 +193,17 @@ footer {
 footer p {
   margin: 0;
   color: #ffffff; 
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  #sobre-mi,
+  .perfil-columnas {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 0;
+  }
 }
