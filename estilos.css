@@ -179,15 +179,6 @@ main {
   margin: 6px 0;
 }
 
-.cita-lateral blockquote {
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  color: rgb(253, 116, 3);
-  border-left: 4px solid rgb(253, 116, 3);
-  padding-left: 16px;
-  margin: 32px 16px;
-}
-
 footer {
   display: flex;
   justify-content: center;
