@@ -158,9 +158,9 @@ header {
 
 .contenido h4 {
   font-family: 'Antonio', sans-serif;
-  font-size: 37px; /* como en la muestra que pasaste */
+  font-size: 37px; 
   margin-bottom: 12px;
-  color: white; /* para que resalte bien sobre el fondo naranja */
+  color: white; 
 }
 
 .contenido p {
@@ -182,7 +182,7 @@ footer p {
   color: white;
   display: flex;
   justify-content: center;
-  gap: 16px; /* espacio entre partes */
+  gap: 30px;
   margin: 0;
   flex-wrap: wrap;
 }
