@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
 
 body {
   margin: 0;
@@ -124,13 +125,13 @@ header {
 }
 
 .contenido {
-  background-color: rgb(253, 116, 3);
-  border-radius: 24px; /* más redondeado */
-  padding: 24px 32px; /* más padding para alargar horizontalmente */
-  flex: 1 1 320px; /* un poco más ancho */
-  max-width: 360px; /* ancho máximo mayor */
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  color: white;
+  background-color: rgba(255, 176, 103, 0.301);
+  border-radius: 20px 20px 10px 10px;
+  padding: 18px 30px;
+  flex: 1 1 300px;
+  max-width: 360px;
+  box-shadow: 0 0 12px rgb(253, 116, 3);
+  color: rgb(253, 116, 3);
   line-height: 1.6;
   opacity: 0;
   transform: translateX(-100%);
@@ -163,61 +164,47 @@ header {
   animation-delay: 0.8s;
 }
 
-/* Títulos con tipografía Ruda */
-.contenido h4.experiencia,
-.contenido h4.manejo-adobe,
-.contenido h4.idiomas {
-  font-family: 'Ruda', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 16px;
-  color: white;
-}
-
-/* Dejamos el resto de títulos como estaban */
-.contenido h4 {
+/* Estilos para los h4 normales */
+h4 {
   font-family: 'Antonio', sans-serif;
   font-size: 37px;
-  margin-bottom: 12px;
   color: white;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
+/* Estilos para h4 con clase ruda */
+h4.ruda {
+  font-family: 'Ruda', sans-serif;
+  font-size: 28px;
+  color: #FF9E52; /* Naranja pastel */
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Para los textos dentro de los contenidos */
 .contenido p {
-  margin-bottom: 8px;
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgb(253, 116, 3);
+  margin: 8px 0;
 }
 
+.contenido span.estrella {
+  font-weight: 700;
+}
+
+/* Footer */
 footer {
   background-color: #aa063d;
+  padding: 16px 32px;
+  color: white;
   text-align: center;
-  padding: 16px;
-  color: white;
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
-footer p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-  .inicio h1 {
-    font-size: 64px;
-    text-align: center;
-  }
-
-  .contenido {
-    max-width: 100%;
-  }
-
-  .marquee span {
-    font-size: 100px;
-  }
+footer span {
+  display: block;
+  margin: 4px 0;
 }
