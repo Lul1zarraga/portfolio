@@ -65,8 +65,7 @@ header {
 }
 
 .sobre-mi {
-  padding: 64px 32px;
-  text-align: center;
+  text-align: left;
   font-family: 'tt-travels-next', sans-serif;
 }
 
@@ -83,6 +82,7 @@ header {
   margin: 0 auto;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 .secciones-horizontales {
