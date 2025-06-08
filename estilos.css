@@ -50,9 +50,7 @@ header .menu-navegacion {
 }
 
 header .menu-navegacion a {
-  font-family: 'Roboto', sans-serif;
   color: rgb(253, 116, 3); 
-  font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
 }
@@ -85,37 +83,17 @@ header {
 }
 
 #texto-fijo {
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
-  color: rgb(253, 116, 3);
-  text-align: center;
   margin: 0;
   position: absolute; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
 }
 
 .portfolio-intro {
   position: relative; 
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.titulo-animado-portfolio {
-  display: inline-block;
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
-  color: rgb(253, 116, 3);
-  white-space: nowrap;
-  animation: mover 5s linear 2;
-}
 
 @keyframes mover {
   0% {
@@ -130,18 +108,13 @@ header {
 
 main {
   display: flex;
-  gap: 40px;
-  max-width: 1700px;
+  gap: 400px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 24px;
-  box-sizing: border-box;
 }
 
 #sobre-mi {
-  flex: 1 1 50%;
   max-width: 600px;
-  padding: 0; 
-  margin: 0;
 }
 
 #sobre-mi h2 {
@@ -149,20 +122,10 @@ main {
 }
 
 .perfil-columnas {
-  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 0; 
 }
 
-.perfil-bloque {
-  background-color: transparent;
-  padding: 16px;
-  border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 .perfil-bloque h3 {
   margin-bottom: 6px;
