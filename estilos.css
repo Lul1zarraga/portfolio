@@ -1,4 +1,10 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(253, 116, 3);
+}
+
 h1 {
   color: rgb(253, 116, 3);
   font-size: 310px;
