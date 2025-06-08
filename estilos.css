@@ -31,7 +31,6 @@ p {
   color: #000000;
 }
 
-/* MENU NAVEGACION - links en roboto blanco con hover naranja y animacion */
 header .menu-navegacion {
   display: flex;
   gap: 32px;
@@ -39,14 +38,14 @@ header .menu-navegacion {
 
 header .menu-navegacion a {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: rgb(253, 116, 3);
   font-size: 18px;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
 }
 
 header .menu-navegacion a:hover {
-  color: rgb(253, 116, 3); /* naranja fuerte */
+  color: rgb(253, 116, 3);
   transform: scale(1.2);
   font-weight: 700;
 }
@@ -100,10 +99,6 @@ header {
   }
 }
 
-.seccion-sobre-mi p {
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
 
 .cita-lateral blockquote {
   font-family: 'Roboto', sans-serif;
