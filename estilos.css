@@ -70,7 +70,7 @@ header {
   font-family: 'tt-travels-next', sans-serif;
   font-size: 310px;
   color: rgb(253, 116, 3);
-  animation: mover 15s linear infinite;
+  animation: mover 7s linear infinite;
 }
 
 @keyframes mover {
