@@ -68,7 +68,6 @@ header .menu-navegacion a:hover {
 .nav-social-iconos a:hover img {
   transform: scale(1.2);
 }
-
 .portfolio-intro {
   height: 100vh;
   display: flex;
@@ -84,5 +83,14 @@ header .menu-navegacion a:hover {
   color: rgb(253, 116, 3);
   white-space: nowrap;
   animation: mover 5s linear infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
