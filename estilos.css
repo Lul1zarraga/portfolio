@@ -98,6 +98,11 @@ header {
     transform: translateX(-100%);
   }
 }
+#sobre-mi {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .seccion-sobre-mi p {
   color: white;
@@ -121,8 +126,8 @@ header {
 }
 
 .perfil-bloque {
-  background-color: transparent
-  padding: 16px;
+  background-color: transparent;
+    padding: 16px;
   border-radius: 8px;
   flex: 1 1 250px;
 }
