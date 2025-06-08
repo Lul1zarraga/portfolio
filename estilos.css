@@ -131,3 +131,29 @@ header {
   border-radius: 8px;
   flex: 1 1 250px;
 }
+#perfil-profesional {
+  display: flex;
+  gap: 20px;
+  max-width: 900px; 
+  margin: 40px auto;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: entrarDesdeIzquierda 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+#perfil-profesional .perfil-bloque {
+  flex: 1 1 200px;
+  background-color:  transparent;
+  border-radius: 12px;
+  padding: 18px;
+  line-height: 1.5;
+}
+
+
+@keyframes entrarDesdeIzquierda {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
