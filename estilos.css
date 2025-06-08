@@ -8,17 +8,38 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1100; 
   display: flex;
   justify-content: space-between;
   padding: 16px 32px;
   background-color: #aa063d;
 }
 
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slider span {
+  display: inline-block;
+  animation: slideInFromLeft 2.8s ease-in forwards;
+}
+
+/* Opcional para delay */
+.slider span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.slider span:nth-child(3) {
+  animation-delay: 1s;
+}
+.slider span:nth-child(4) {
+  animation-delay: 1.5s;
+}
 .nav-left,
 .nav-right {
   display: flex;
@@ -33,6 +54,7 @@ header {
   font-size: 18px;
 }
 
+/* Efecto para los links del menú (nav-left) */
 .nav-left a {
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: pointer;
@@ -43,6 +65,7 @@ header {
   font-weight: 700;
 }
 
+/* Efecto para los iconos del nav-right */
 .nav-right a img {
   width: 40px;
   height: 40px;
@@ -54,61 +77,40 @@ header {
 }
 
 .inicio {
-  position: fixed;
-  top: 56px;
-  left: 0;
-  width: 100vw;
-  height: calc(100vh - 56px);
-  overflow: hidden;
-  z-index: 1000;
-  background: transparent;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  box-sizing: border-box;
 }
 
-/* Carrusel horizontal en loop (se repite el texto en el HTML para loop continuo) */
-
-.inicio h1.portfolio-carrusel {
+.inicio h1 {
   font-family: 'tt-travels-next', sans-serif;
-  font-size: 160px;
-  font-weight: bold;
-  white-space: nowrap;
-  display: inline-block;
+  font-size: 120px;
   color: rgb(253, 116, 3);
-  animation: scrollPortfolio 15s linear infinite;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-  margin: 0;
+  animation: aparecer 1.5s ease forwards;
+  opacity: 0;
 }
 
-.inicio h1.portfolio-carrusel:hover {
-  transform: scale(1.2);
-  color: #ff8c00;
-}
-
-@keyframes scrollPortfolio {
-  0% {
-    transform: translateX(0);
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .sobre-mi {
-  margin-top: calc(100vh - 56px);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* todo alineado a la izquierda */
   text-align: left;
   font-family: 'tt-travels-next', sans-serif;
-  padding: 0 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4px;
+  padding: 0 20px; /* para que no quede pegado a los bordes */
+  max-width: 800px; /* ancho máximo para que no quede muy ancho */
+  margin: 0 auto 4px auto; /* centra la sección horizontalmente y da margen abajo */
 }
 
 .sobre-mi h3 {
@@ -126,7 +128,6 @@ header {
 }
 
 .secciones-horizontales {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -184,9 +185,9 @@ header {
 
 .contenido h4 {
   font-family: 'Antonio', sans-serif;
-  font-size: 37px;
+  font-size: 37px; 
   margin-bottom: 12px;
-  color: white;
+  color: white; 
 }
 
 .contenido p {
@@ -215,15 +216,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .inicio {
-    width: 100vw;
-    bottom: auto;
-    right: auto;
-    top: 56px;
-    height: calc(100vh - 56px);
-    padding-left: 10px;
-  }
-  .inicio h1.portfolio-carrusel {
+  .inicio h1 {
     font-size: 64px;
     text-align: center;
   }
@@ -231,56 +224,29 @@ footer p {
   .contenido {
     max-width: 100%;
   }
-  .slider-container {
-  overflow: hidden;
+}
+.marquee {
   width: 100%;
-  height: 80px;
-  background-color: #F58923;
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.slider {
-  display: inline-flex;
+  overflow: hidden;
   white-space: nowrap;
-  animation: slideLeft 15s linear infinite;
-  font-family: 'Antonio', sans-serif;
-  font-size: 72px;
-  color: white;
-  font-weight: 900;
-  letter-spacing: 12px;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 30px 0;
 }
 
-.slider span {
-  padding: 0 40px;
-  user-select: none;
-  animation: wave 3s ease-in-out infinite alternate;
+.marquee span {
+  display: inline-block;
+  font-family: 'tt-travels-next', sans-serif;
+  font-size: 120px;
+  color: rgb(253, 116, 3);
+  animation: mover 10s linear infinite;
 }
 
-.slider span:nth-child(odd) {
-  animation-delay: 0s;
-}
-
-.slider span:nth-child(even) {
-  animation-delay: 1.5s;
-}
-
-@keyframes slideLeft {
-  0% {
-    transform: translateX(0);
+@keyframes mover {
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(100%);
   }
-}
-
-@keyframes wave {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
 }
