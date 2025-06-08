@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(253, 116, 3);
+background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
 }
 
 h1 {
