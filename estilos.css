@@ -70,7 +70,7 @@ header {
   font-family: 'tt-travels-next', sans-serif;
   font-size: 310px;
   color: rgb(253, 116, 3);
-  animation: mover 5s linear infinite;
+  animation: mover 7s linear infinite;
 }
 
 @keyframes mover {
@@ -125,11 +125,11 @@ header {
 
 .contenido {
   background-color: rgb(253, 116, 3);
-  border-radius: 20px;
-  padding: 18px 28px;
-  flex: 1 1 280px;
-  max-width: 380px;
-  box-shadow: 0 0 15px rgba(253, 116, 3, 0.3);
+  border-radius: 24px; /* más redondeado */
+  padding: 24px 32px; /* más padding para alargar horizontalmente */
+  flex: 1 1 320px; /* un poco más ancho */
+  max-width: 360px; /* ancho máximo mayor */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   color: white;
   line-height: 1.6;
   opacity: 0;
@@ -163,21 +163,22 @@ header {
   animation-delay: 0.8s;
 }
 
-.contenido h4 {
-  font-family: 'Antonio', sans-serif;
-  font-size: 37px;
-  margin-bottom: 12px;
-  color: white;
-}
-
-
-.contenido h4.experiencia, 
+/* Títulos con tipografía Ruda */
+.contenido h4.experiencia,
 .contenido h4.manejo-adobe,
 .contenido h4.idiomas {
   font-family: 'Ruda', sans-serif;
   font-weight: 700;
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+/* Dejamos el resto de títulos como estaban */
+.contenido h4 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 37px;
+  margin-bottom: 12px;
   color: white;
 }
 

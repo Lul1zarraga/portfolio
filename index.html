@@ -3,57 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Currículum - Formación y Experiencia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&family=Ruda&display=swap" rel="stylesheet" />
-  <style>
-    /* Acá podés pegar el CSS que te pasé antes */
-  </style>
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet" />
+  <!-- Agregamos Ruda -->
+  <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
 
-<header>
-  <div class="nav-left">
-    <a href="#inicio">Inicio</a>
-    <a href="#formacion">Formación</a>
-    <a href="#experiencia">Experiencia</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-  <div class="nav-right">
-    <a href="#"><img src="tu-logo.png" alt="Logo" /></a>
-  </div>
-</header>
+  <header>
+    <nav class="nav-left">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-<section class="secciones-horizontales animar" id="formacion">
+    <nav class="nav-right">
+      <a href="https://www.instagram.com/lulizarraga_" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.behance.net/lucianalizarra1" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-behance.svg" alt="Behance" />
+      </a>
+      <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank" rel="noopener noreferrer">
+        <img src="img/icono-gmail.svg" alt="Gmail" />
+      </a>
+    </nav>
+  </header>
 
-  <div class="contenido">
-    <h4 class="formacion">Formación</h4>
-    <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
-    <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
-  </div>
+  <section class="inicio">
+    <div class="marquee">
+      <span>Portfolio&nbsp;</span>
+      <span>Portfolio&nbsp;</span>
+      <span>Portfolio&nbsp;</span>
+    </div>
+  </section>
 
-  <div class="contenido">
-    <h4 class="experiencia">Experiencia laboral</h4>
-    <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
-  </div>
+  <main>
+    <section id="sobre-mi" class="sobre-mi">
+      <h3>Sobre mí</h3>
+      <p>
+        Soy una estudiante de la carrera de Diseño y Comunicación Visual, con un enfoque en el desarrollo de propuestas visuales que comuniquen eficazmente. Me apasiona la creación de materiales gráficos, tanto para impresión como para entornos digitales. He tenido la oportunidad de trabajar en diversos proyectos donde he aplicado lo aprendido, colaborando con diferentes equipos y enfrentando desafíos de diseño. Mi mayor motivación es seguir creciendo profesionalmente en el área, ampliando mi conocimiento en diseño visual y comunicación.
+      </p>
+    </section>
 
-  <div class="contenido">
-    <h4 class="manejo-adobe">Manejo de Adobe:</h4>
-    <p>InDesign ★★★★</p>
-    <p>Photoshop ★★★★</p>
-    <p>Illustrator ★★★★</p>
-    <p>After Effects ★★</p>
-  </div>
+    <div class="secciones-horizontales" id="proyectos">
+      <section id="formacion" class="contenido">
+        <h4>Formación</h4>
+        <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
+        <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
+      </section>
 
-  <div class="contenido">
-    <h4 class="idiomas">Idiomas</h4>
-    <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
-  </div>
+      <section id="experiencia-laboral" class="contenido">
+        <h4 class="ruda">Experiencia laboral</h4>
+        <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
+      </section>
 
-</section>
+      <section id="habilidades-informaticas" class="contenido">
+        <h4 class="ruda">Manejo de Adobe:</h4>
+        <p>InDesign <span class="estrella">★★★★</span></p>
+        <p>Photoshop <span class="estrella">★★★★</span></p>
+        <p>Illustrator <span class="estrella">★★★★</span></p>
+        <p>After Effects <span class="estrella">★★</span></p>
+      </section>
 
-<footer>
-  <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
-</footer>
+      <section id="idiomas" class="contenido">
+        <h4 class="ruda">Idiomas</h4>
+        <p>Inglés: Comprensión oral - Intermedio / Producción oral - Básico</p>
+      </section>
+    </div>
+  </main>
 
+  <footer id="contacto">
+    <p>
+      <span>© 2025 Luciana</span>
+      <span>Portfolio académico - Computación III - UNLa</span>
+      <span>Buenos Aires, Argentina</span>
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const secciones = document.querySelector('.secciones-horizontales');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            secciones.classList.add('animar');
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+
+      observer.observe(secciones);
+    });
+  </script>
 </body>
 </html>
