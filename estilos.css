@@ -210,7 +210,7 @@ footer p {
 .marquee span {
   display: inline-block;
   font-family: 'tt-travels-next', sans-serif;
-  font-size: 300px;
+  font-size: 310px;
   color: rgb(253, 116, 3);
   animation: mover 10s linear infinite;
 }
