@@ -468,7 +468,7 @@ footer p {
 
 .marquee-content span {
   font-family: 'tt-travels-next', sans-serif;
-  font-size: 300px; /* EXTREMADAMENTE GRANDE */
+  font-size: 300px; 
   color: rgb(253, 116, 3);
   display: inline-block;
   padding-right: 60px;
