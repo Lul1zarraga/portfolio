@@ -1,8 +1,9 @@
-// Mostrar el texto fijo después de la animación
-const animado = document.getElementById("texto-animado");
-const fijo = document.getElementById("texto-fijo");
+document.addEventListener("DOMContentLoaded", function () {
+  const textoAnimado = document.getElementById("texto-animado");
+  const textoFijo = document.getElementById("texto-fijo");
 
-animado.addEventListener("animationend", () => {
-  animado.style.display = "none";
-  fijo.style.display = "block";
+  textoAnimado.addEventListener("animationend", function () {
+    textoAnimado.style.display = "none";
+    textoFijo.style.display = "block";
+  });
 });
