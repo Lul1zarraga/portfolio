@@ -1,3 +1,4 @@
+/* Estilos generales */
 html {
   scroll-behavior: smooth;
 }
@@ -12,26 +13,19 @@ body {
 a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
-.portfolio-intro {
-  position: relative;
-  height: 350px; /* espacio suficiente para el texto grande animado */
-  margin-bottom: 40px; /* separación del siguiente contenido */
-  overflow: hidden; /* para que texto no se vea fuera de la sección */
-}
 
-/* Animación del texto */
+/* Texto animado y fijo */
 #texto-animado {
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
   animation: mover 5s forwards;
-  white-space: nowrap;
   position: absolute;
   top: 50%;
-  left: 100%;
-  transform: translateY(-50%);
-  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 #texto-fijo {
@@ -39,23 +33,24 @@ a, a:hover, a:focus {
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: none;
-  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5;
+  white-space: nowrap;
 }
 
+/* Animación mover */
 @keyframes mover {
   0% {
-    left: 100%;
+    transform: translate(-50%, -50%) translateX(0%);
   }
   100% {
-    left: -120%;
+    transform: translate(-150%, -50%);
   }
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -67,6 +62,7 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Navegación principal */
 .menu-navegacion {
   display: flex;
   gap: 30px;
@@ -86,6 +82,7 @@ header {
   font-weight: 700;
 }
 
+/* Íconos sociales */
 .nav-social-iconos {
   display: flex;
   gap: 20px;
@@ -102,6 +99,7 @@ header {
   transform: scale(1.2);
 }
 
+/* Títulos */
 h2 {
   font-family: 'Travels', sans-serif;
   font-size: 2rem;
@@ -122,6 +120,7 @@ h4 {
   margin-bottom: 4px;
 }
 
+/* Párrafos */
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -130,24 +129,28 @@ p {
   margin: 6px 0;
 }
 
-
+/* Contenido principal */
 main {
+  display: flex;
+  gap: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 40px 60px 40px;
+  padding-top: 1200px;
 }
 
+/* Sección sobre mí */
 #sobre-mi {
-  margin-top: 40px;
+  max-width: 600px;
 }
 
-
+/* Perfil columnas */
 .perfil-columnas {
   display: flex;
   flex-direction: column;
   margin: 20px;
 }
 
+/* Bloques dentro de perfil */
 .perfil-bloque h3 {
   margin-bottom: 6px;
   line-height: 1.2;
@@ -157,6 +160,7 @@ main {
   margin: 6px 0;
 }
 
+/* Cita lateral */
 .cita-lateral blockquote {
   font-style: italic;
   color: rgb(253, 116, 3);
@@ -166,6 +170,7 @@ main {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -179,6 +184,7 @@ footer p {
   margin: 0;
 }
 
+/* Responsive para móviles */
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
@@ -186,8 +192,7 @@ footer p {
     padding: 20px;
     align-items: center;
   }
-}
-@media (max-width: 600px) {
+
   main {
     flex-direction: column;
     padding: 16px;
