@@ -38,6 +38,36 @@
   </header>
 
   <main>
+    
+    <section class="formulario">
+  <h2>¿Tenés una idea o proyecto en mente?</h2>
+  <p>Completá el formulario y me pondré en contacto a la brevedad.</p>
+
+  <form action="#" method="post">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="proyecto">Tipo de proyecto</label>
+    <select id="proyecto" name="proyecto" required>
+      <option value="" disabled selected>Seleccioná una opción</option>
+      <option value="editorial">Editorial</option>
+      <option value="branding">Branding</option>
+      <option value="packaging">Diseño de Packaging</option>
+    </select>
+
+    <label for="mensaje">Contame más sobre tu proyecto</label>
+    <textarea id="mensaje" name="mensaje" placeholder="Detalles, ideas, consultas..." required></textarea>
+
+    <div class="enviar-borrar">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+    </div>
+  </form>
+</section>
+
 
   </main>
 
