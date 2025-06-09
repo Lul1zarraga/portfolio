@@ -43,12 +43,6 @@ p {
   font-size: 18px;
   color: #000000;
 }
-
-header .menu-navegacion {
-  display: flex;
-  gap: 32px;
-}
-
 header .menu-navegacion a {
   color: rgb(253, 116, 3); 
   text-decoration: none;
@@ -56,16 +50,8 @@ header .menu-navegacion a {
 }
 
 header .menu-navegacion a:hover {
-  color: rgb(253, 116, 3); 
   transform: scale(1.2);
   font-weight: 700;
-}
-
-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 16px 32px;
 }
 
 .nav-social-iconos {
