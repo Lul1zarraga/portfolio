@@ -9,14 +9,26 @@ a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 } 
 
-h1 {
+h1 #texto-animado{
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
-  animation: mover 5s linear infinite;
+  animation: mover 5s 1;
 }
 
+#texto-fijo {
+  margin: 0;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: rgb(253, 116, 3);
+  font-size: 310px;
+  font-family: 'tt-travels-next', sans-serif;
+  white-space: nowrap;
+} 
 h2 {
   font-family: 'Travels', sans-serif;
   font-size: 2rem; 
