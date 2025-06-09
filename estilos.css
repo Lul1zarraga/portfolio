@@ -9,12 +9,12 @@ a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 } 
 
-h1 #texto-animado{
+#texto-animado {
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
-  animation: mover 5s 1;
+  animation: mover 5s forwards;
 }
 
 #texto-fijo {
@@ -110,7 +110,7 @@ header {
 }
 
 .portfolio-intro {
-  position: relative; 
+  position: relative;
   height: 100vh;
 }
 
