@@ -4,59 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Luciana Lizárraga</title>
-  <link rel="stylesheet" href="estilos.css">
 
- <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xyg3jaf.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ruda&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <header>
     <nav class="menu-navegacion">
       <a href="#sobre-mi"><p>Sobre mí</p></a>
       <a href="#proyectos"><p>Proyectos</p></a>
       <a href="#contacto"><p>Contacto</p></a>
     </nav>
-
     <nav class="nav-social-iconos">
       <a href="https://www.instagram.com/lulizarraga_" target="_blank">
-        <img src="img/icono-instagram.svg" width="50" height="50" alt="icono de la red social instagram" />
+        <img src="img/icono-instagram.svg" alt="Instagram" />
       </a>
       <a href="https://www.behance.net/lucianalizarra1" target="_blank">
-        <img src="img/icono-behance.svg" width="50" height="50" alt="icono de la red social behance" />
+        <img src="img/icono-behance.svg" alt="Behance" />
       </a>
       <a href="https://www.linkedin.com/in/luciana-lizarraga-a98219207/" target="_blank">
-        <img src="img/icono-linkedin.svg" width="50" height="50" alt="icono de la red social LinkedIn" />
+        <img src="img/icono-linkedin.svg" alt="LinkedIn" />
       </a>
       <a href="mailto:lucianaalizarragaa@gmail.com" target="_blank">
-        <img src="img/icono-gmail.svg" width="50" height="50" alt="icono del servicio en línea Gmail" />
+        <img src="img/icono-gmail.svg" alt="Gmail" />
       </a>
     </nav>
   </header>
 
+  <section class="portfolio-intro">
+    <h1 id="texto-animado">Portfolio</h1>
+    <h1 id="texto-fijo">Portfolio</h1>
+  </section>
 
-<section class="portfolio-intro">
-  <h1 id="texto-animado">Portfolio</h1>
-  <h1 id="texto-fijo">Portfolio</h1>
-</section>
- 
   <main>
     <section id="sobre-mi">
       <h3>Sobre mí</h3>
-      <p>Soy estudiante de la carrera de Diseño y Comunicación Visual, con experiencia en la creación de materiales gráficos para impresión y digital, abarcando todo el proceso, desde la conceptualización hasta la materialización. Mi enfoque es desarrollar propuestas visuales que comuniquen eficazmente y generen una experiencia memorable para el espectador.</p>
-      <p>Mi prioridad es ganar experiencia para continuar mi formación profesional y aplicar lo aprendido. Tengo una profunda pasión por las artes visuales, especialmente la pintura, la ilustración y la fotografía, lo que enriquece mi visión del mundo e inspira mi trabajo de diseño. También disfruto mucho de ir a museos y me motiva conectar con distintas expresiones del arte.</p>
+      <p>Soy estudiante de la carrera de Diseño y Comunicación Visual, con experiencia en la creación de materiales gráficos para impresión y digital...</p>
+      <p>Mi prioridad es ganar experiencia... También disfruto mucho de ir a museos...</p>
     </section>
 
     <section id="perfil-profesional" class="perfil-columnas">
       <section id="formacion" class="perfil-bloque">
         <h4>Formación</h4>
-        <p>Licenciatura en Diseño y Comunicación Visual (UNLa) — En curso desde 2022</p>
-        <p>Curso de Auxiliar de Marketing (CFP) — Finalizado en 2021</p>
+        <p>Licenciatura en Diseño... — En curso desde 2022</p>
+        <p>Curso de Auxiliar de Marketing... — Finalizado en 2021</p>
       </section>
 
       <section id="idiomas" class="perfil-bloque">
@@ -67,13 +63,15 @@
 
       <section id="experiencia" class="perfil-bloque">
         <h4>Experiencia</h4>
-        <p>Freelance en Diseño Gráfico: materiales impresos y digitales, trabajo en equipo.</p>
+        <p>Freelance en Diseño Gráfico...</p>
       </section>
 
       <section id="adobe" class="perfil-bloque">
         <h4>Adobe</h4>
-        <p>InDesign <span class="estrella">★★★★</span></p> <p>Photoshop <span class="estrella">★★★★</span></p>
-        <p>Illustrator <span class="estrella">★★★★</span></p> <p>After Effects <span class="estrella">★★</span></p>
+        <p>InDesign ★★★★</p> 
+        <p>Photoshop ★★★★</p>
+        <p>Illustrator ★★★★</p> 
+        <p>After Effects ★★</p>
       </section>
     </section>
   </main>
@@ -84,6 +82,15 @@
     <p>Buenos Aires, Argentina</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Mostrar el texto fijo después de la animación
+    const animado = document.getElementById("texto-animado");
+    const fijo = document.getElementById("texto-fijo");
+
+    animado.addEventListener("animationend", () => {
+      animado.style.display = "none";
+      fijo.style.display = "block";
+    });
+  </script>
 </body>
 </html>
