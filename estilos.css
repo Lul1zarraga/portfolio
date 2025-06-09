@@ -140,18 +140,26 @@ p {
 main {
   max-width: 1600px;
   margin: 0 auto;
+
+  display: flex;
+  gap: 40px; /* espacio entre columnas */
+  padding: 20px;
+  justify-content: center;
 }
 
 /* Sección sobre mí */
 #sobre-mi {
+  flex: 1;
   max-width: 600px;
 }
 
-/* Perfil columnas */
-.perfil-columnas {
+/* Sección perfil profesional (formación, idiomas, experiencia, adobe) */
+#perfil-profesional {
+  flex: 1;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  gap: 20px;
 }
 
 /* Bloques dentro de perfil */
@@ -203,7 +211,7 @@ footer p {
   }
 
   #sobre-mi,
-  .perfil-columnas {
+  #perfil-profesional {
     flex: 1 1 100%;
     max-width: 100%;
     padding: 0;
