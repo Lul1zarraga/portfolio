@@ -9,6 +9,15 @@ body {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
 
+#videoIntro {
+  position: fixed;      
+  top: 0;
+  left: 0;
+  width: 100vw;        
+  height: 100vh;       
+  object-fit: cover;  
+  z-index: 9999;      
+} 
 a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
