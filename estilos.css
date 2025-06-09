@@ -12,18 +12,26 @@ body {
 a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
+.portfolio-intro {
+  position: relative;
+  height: 350px; /* espacio suficiente para el texto grande animado */
+  margin-bottom: 40px; /* separación del siguiente contenido */
+  overflow: hidden; /* para que texto no se vea fuera de la sección */
+}
 
+/* Animación del texto */
 #texto-animado {
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
   animation: mover 5s forwards;
+  white-space: nowrap;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  left: 100%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 #texto-fijo {
@@ -31,19 +39,20 @@ a, a:hover, a:focus {
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: none;
+  white-space: nowrap;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  white-space: nowrap;
+  z-index: 5;
 }
 
 @keyframes mover {
   0% {
-    transform: translate(-50%, -50%) translateX(0%);
+    left: 100%;
   }
   100% {
-    transform: translate(-150%, -50%);
+    left: -120%;
   }
 }
 
@@ -121,17 +130,17 @@ p {
   margin: 6px 0;
 }
 
+
 main {
-  display: flex;
-  gap: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 1200px;
+  padding: 0 40px 60px 40px;
 }
 
 #sobre-mi {
-  max-width: 600px;
+  margin-top: 40px;
 }
+
 
 .perfil-columnas {
   display: flex;
