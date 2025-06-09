@@ -45,8 +45,8 @@ a, a:hover, a:focus {
   100% {
     transform: translate(-150%, -50%);
   }
-  
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -170,7 +170,8 @@ footer p {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+/* Media queries adaptados desde 600px */
+@media (max-width: 600px) {
   main {
     flex-direction: column;
     padding: 16px;
