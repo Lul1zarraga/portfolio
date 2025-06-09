@@ -16,8 +16,8 @@ a, a:hover, a:focus {
 /* Contenedor para texto animado para que no tape el contenido */
 .portfolio-intro {
   position: relative;
-  height: 800px; /* ajustá este valor según el tamaño del texto */
-  margin-bottom: 40px; /* espacio debajo para separar del resto */
+  height: 800px;
+  margin-bottom: 40px;
 }
 
 /* Texto animado y fijo */
@@ -46,7 +46,6 @@ a, a:hover, a:focus {
   white-space: nowrap;
 }
 
-/* Animación mover */
 @keyframes mover {
   0% {
     transform: translate(-50%, -50%) translateX(0%);
@@ -141,26 +140,41 @@ main {
   margin: 0 auto;
 }
 
+/* Contenedor principal con grid para alinear "Sobre mí" y perfil */
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 20px 40px 20px;
+}
+
 /* Sección sobre mí */
 #sobre-mi {
   max-width: 600px;
 }
 
-/* Perfil columnas */
+/* Perfil columnas con alineación a la derecha */
 .perfil-columnas {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: end; /* esto alinea todo a la derecha dentro del área */
 }
 
 /* Bloques dentro de perfil */
-.perfil-bloque h3 {
+.perfil-bloque h3, .perfil-bloque h4 {
   margin-bottom: 6px;
   line-height: 1.2;
 }
 
 .perfil-bloque p {
   margin: 6px 0;
+}
+
+/* Estrellas para habilidades Adobe */
+.estrella {
+  color: #fd7403;
+  font-weight: 700;
 }
 
 /* Cita lateral */
@@ -187,51 +201,4 @@ footer p {
   margin: 0;
 }
 
-/* Responsive para móviles */
-@media (max-width: 600px) {
-  footer {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    align-items: center;
-  }
-
-  main {
-    flex-direction: column;
-    padding: 16px;
-  }
-
-  #sobre-mi,
-  .perfil-columnas {
-    flex: 1 1 100%;
-    max-width: 100%;
-    padding: 0;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 12px 20px;
-  }
-
-  .menu-navegacion {
-    gap: 15px;
-  }
-
-  .nav-social-iconos a img {
-    width: 30px;
-    height: 30px;
-  }
-
-  #texto-animado,
-  #texto-fijo {
-    font-size: 120px;
-  }
-
-  /* Ajustamos el contenedor del texto animado para móvil */
-  .portfolio-intro {
-    height: 150px;
-    margin-bottom: 20px;
-  }
-}
-  
+/*
