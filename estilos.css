@@ -10,15 +10,17 @@ body {
 }
 
 #videoIntro {
-  position: fixed;      
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;        
-  height: 100vh;       
-  object-fit: cover;  
-  z-index: 9999;      
-} 
-a, a:hover, a:focus {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+
+a {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
 
@@ -28,12 +30,11 @@ a, a:hover, a:focus {
   margin-bottom: 40px;
 }
 
-#texto-animado {
+#texto-animado, #texto-fijo {
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
-  animation: mover 5s forwards;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,16 +42,12 @@ a, a:hover, a:focus {
   white-space: nowrap;
 }
 
+#texto-animado {
+  animation: mover 5s forwards;
+}
+
 #texto-fijo {
-  color: rgb(253, 116, 3);
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
   display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
 }
 
 @keyframes mover {
@@ -99,15 +96,14 @@ header {
 }
 
 .nav-social-iconos a img {
-  transition: transform 0.3s ease;
   width: 50px;
   height: 50px;
+  transition: transform 0.3s ease;
 }
 
 .nav-social-iconos a:hover img {
   transform: scale(1.2);
 }
-
 
 h3 {
   font-size: 60px;
@@ -138,9 +134,9 @@ main {
 
 .contenedor-principal {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 40px;
 }
 
 #sobre-mi {
@@ -150,8 +146,8 @@ main {
 .perfil-columnas {
   display: grid;
   gap: 20px;
-
 }
+
 .perfil-bloque h3, .perfil-bloque h4 {
   margin-bottom: 6px;
 }
@@ -165,7 +161,6 @@ main {
   font-weight: 700;
 }
 
-
 footer {
   display: flex;
   justify-content: center;
@@ -178,10 +173,11 @@ footer p {
   color: #fff;
   margin: 0;
 }
+
 .formulario {
   max-width: 600px;
   margin: 40px auto;
-  background: rgba(255, 255, 255, 0.85); 
+  background: rgba(255, 255, 255, 0.85);
   border: 2px solid rgb(253, 116, 3);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
@@ -207,7 +203,6 @@ footer p {
   background: rgba(255, 255, 255, 0.342);
   transition: border-color 0.3s ease;
   resize: vertical;
-
 }
 
 .formulario input[type="text"]:focus,
