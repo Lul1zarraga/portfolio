@@ -158,7 +158,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  justify-items: end; /* esto alinea todo a la derecha dentro del área */
+
 }
 
 /* Bloques dentro de perfil */
