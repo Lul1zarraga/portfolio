@@ -23,6 +23,11 @@ body {
 a {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
+h1 {
+  color: rgb(253, 116, 3);
+  font-size: 310px;
+  font-family: 'tt-travels-next', sans-serif;
+}
 
 .portfolio-intro {
   position: relative;
@@ -31,9 +36,6 @@ a {
 }
 
 #texto-animado, #texto-fijo {
-  color: rgb(253, 116, 3);
-  font-size: 310px;
-  font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
   position: absolute;
   top: 50%;
