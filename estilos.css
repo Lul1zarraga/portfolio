@@ -14,6 +14,13 @@ a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
 
+/* Contenedor para texto animado para que no tape el contenido */
+.portfolio-intro {
+  position: relative;
+  height: 350px; /* ajustá este valor según el tamaño del texto */
+  margin-bottom: 40px; /* espacio debajo para separar del resto */
+}
+
 /* Texto animado y fijo */
 #texto-animado {
   color: rgb(253, 116, 3);
@@ -135,7 +142,7 @@ main {
   gap: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 1200px;
+  padding-top: 0; /* cambié de 1200px a 0 */
 }
 
 /* Sección sobre mí */
@@ -224,4 +231,11 @@ footer p {
   #texto-fijo {
     font-size: 120px;
   }
+
+  /* Ajustamos el contenedor del texto animado para móvil */
+  .portfolio-intro {
+    height: 150px;
+    margin-bottom: 20px;
+  }
 }
+
