@@ -32,7 +32,6 @@ h1 {
 
 .portfolio-intro {
   height: 800px;
-  margin-bottom: 40px;
 }
 
 #texto-animado, #texto-fijo {
@@ -137,7 +136,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 0 20px 40px;
+  padding: 20px 20px 40px;
 }
 
 #sobre-mi {
@@ -174,6 +173,10 @@ footer p {
   color: #fff;
   margin: 0;
 }
+
+
+
+
 
 .formulario {
   max-width: 600px;
