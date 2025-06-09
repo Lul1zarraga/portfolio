@@ -14,6 +14,7 @@ h1 #texto-animado{
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
+  white-space: nowrap; 
   animation: mover 5s 1;
 }
 
