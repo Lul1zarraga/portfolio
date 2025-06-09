@@ -17,7 +17,7 @@ a, a:hover, a:focus {
 /* Contenedor para texto animado para que no tape el contenido */
 .portfolio-intro {
   position: relative;
-  height: 350px; /* ajustá este valor según el tamaño del texto */
+  height: 800px; /* ajustá este valor según el tamaño del texto */
   margin-bottom: 40px; /* espacio debajo para separar del resto */
 }
 
@@ -138,11 +138,8 @@ p {
 
 /* Contenido principal */
 main {
-  display: flex;
-  gap: 400px;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 0; /* cambié de 1200px a 0 */
 }
 
 /* Sección sobre mí */
