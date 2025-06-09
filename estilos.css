@@ -1,13 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  padding: 0;  
-  cursor: url("img/cursor-personalizado.svg") 20 20, auto;
+  padding: 0;
   background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
+  cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
 
 a, a:hover, a:focus {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
-} 
+}
 
 #texto-animado {
   color: rgb(253, 116, 3);
@@ -15,45 +19,32 @@ a, a:hover, a:focus {
   font-family: 'tt-travels-next', sans-serif;
   display: inline-block;
   animation: mover 5s forwards;
-}
-
-#texto-fijo {
-  margin: 0;
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  white-space: nowrap;
+}
+
+#texto-fijo {
   color: rgb(253, 116, 3);
   font-size: 310px;
   font-family: 'tt-travels-next', sans-serif;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   white-space: nowrap;
-} 
-h2 {
-  font-family: 'Travels', sans-serif;
-  font-size: 2rem; 
-  font-weight: 200; 
 }
 
-h3 {
-  font-size: 60px;
-  color: rgb(253, 116, 3);
-  font-family: 'tt-travels-next', sans-serif;
-  margin-bottom: 8px;
-}
-
-h4 {
-  font-size: 30px;
-  color: rgb(253, 3, 99);
-  font-family: 'Ruda', sans-serif;
-  margin-bottom: 4px;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-  color: #000000;
+@keyframes mover {
+  0% {
+    transform: translate(-50%, -50%) translateX(0%);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateX(-100%);
+  }
 }
 
 header {
@@ -65,6 +56,7 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 .menu-navegacion {
@@ -87,14 +79,14 @@ header {
 }
 
 .nav-social-iconos {
-  display: flex; 
-  gap: 20px; 
+  display: flex;
+  gap: 20px;
   align-items: center;
 }
 
 .nav-social-iconos a img {
   transition: transform 0.3s ease;
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
 
@@ -102,25 +94,32 @@ header {
   transform: scale(1.2);
 }
 
-#texto-fijo {
-  margin: 0;
-  position: absolute; 
-  top: 50%;
-  left: 50%;
+h2 {
+  font-family: 'Travels', sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
-.portfolio-intro {
-  position: relative;
-  height: 100vh;
+h3 {
+  font-size: 60px;
+  color: rgb(253, 116, 3);
+  font-family: 'tt-travels-next', sans-serif;
+  margin-bottom: 8px;
 }
 
-@keyframes mover {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+h4 {
+  font-size: 30px;
+  color: rgb(253, 3, 99);
+  font-family: 'Ruda', sans-serif;
+  margin-bottom: 4px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.6;
+  margin: 6px 0;
 }
 
 main {
@@ -128,14 +127,11 @@ main {
   gap: 400px;
   max-width: 1600px;
   margin: 0 auto;
+  padding-top: 600px; /* espacio para que se vea el texto */
 }
 
 #sobre-mi {
   max-width: 600px;
-}
-
-#sobre-mi h2 {
-  margin-bottom: 8px;
 }
 
 .perfil-columnas {
@@ -154,25 +150,25 @@ main {
 }
 
 .cita-lateral blockquote {
-  font-family: 'Roboto', sans-serif;
   font-style: italic;
   color: rgb(253, 116, 3);
   border-left: 4px solid rgb(253, 116, 3);
   padding-left: 16px;
   margin: 32px 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  gap: 480px; 
+  gap: 480px;
   padding: 20px 0;
-  background-color: #000000;
+  background-color: #000;
 }
 
 footer p {
+  color: #fff;
   margin: 0;
-  color: #ffffff; 
 }
 
 @media (max-width: 768px) {
@@ -201,5 +197,10 @@ footer p {
   .nav-social-iconos a img {
     width: 30px;
     height: 30px;
+  }
+
+  #texto-animado,
+  #texto-fijo {
+    font-size: 120px;
   }
 }
