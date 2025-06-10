@@ -126,16 +126,7 @@ header {
 .contenedor-principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-#sobre-mi {
-  max-width: 600px;
-}
-
-.perfil-columnas {
-  display: grid;
-  gap: 10px;
-  max-width: 600px;
+   margin-inline: 40px;
 }
 
 .perfil-bloque ul {
