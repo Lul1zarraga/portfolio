@@ -85,10 +85,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .menu-navegacion {
@@ -126,14 +128,13 @@ header {
 .contenedor-principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1200px;
+  gap: 100px;
+  max-width: 1500px;
   margin: 0 auto; 
-  padding-inline: 40px; 
 }
 
 #sobre-mi {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .perfil-columnas {
