@@ -136,15 +136,21 @@ width: 100%;
 
 .contenedor-principal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 1fr auto 1fr; 
+  gap: 50px;
   max-width: 1600px;
-  margin: 0 auto; 
+  margin: 0 auto;
+  align-items: start; 
 }
 
 #sobre-mi {
-  max-width: 700px;
+  max-width: 500px;
 }
+
+.perfil-columnas {
+  max-width: 350px;
+}
+
 
 .perfil-columnas {
   max-width: 350px;
