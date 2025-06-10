@@ -126,7 +126,22 @@ header {
 .contenedor-principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-   margin-inline: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding-inline: 40px; 
+}
+
+#sobre-mi {
+  max-width: 600px;
+}
+
+.perfil-columnas {
+  max-width: 600px;
+}
+
+.perfil-bloque {
+  margin-bottom: 20px; 
 }
 
 .perfil-bloque ul {
@@ -141,6 +156,13 @@ header {
   margin-bottom: 6px;
   color: #000;
 }
+
+
+.perfil-bloque ul {
+  margin: 6px 0;
+  padding-left: 20px;
+}
+
 
 .estrella {
   color: #fd7403;
