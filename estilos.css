@@ -30,7 +30,7 @@ h1 {
 }
 
 .portfolio-intro {
-  height: 800px;
+  height: 500px;
 }
 
 #texto-animado, #texto-fijo {
@@ -46,14 +46,6 @@ h1 {
   display: none;
 }
 
-@keyframes mover {
-  0% {
-    transform: translate(-50%, -50%) translateX(0%);
-  }
-  100% {
-    transform: translate(-150%, -50%);
-  }
-}
 
 header {
   display: flex;
@@ -123,10 +115,6 @@ p {
   margin: 6px 0;
 }
 
-main {
-  max-width: 1600px;
-  margin: 0 auto;
-}
 
 .contenedor-principal {
   display: grid;
@@ -169,8 +157,6 @@ footer p {
   color: #fff;
   margin: 0;
 }
-
-
 
 
 
