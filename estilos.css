@@ -40,7 +40,7 @@ h4 {
   font-size: 30px;
   color: rgb(253, 3, 99);
   font-family: 'Ruda', sans-serif;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
 }
 
 p {
@@ -126,8 +126,6 @@ header {
 .contenedor-principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 20px 20px 40px;
 }
 
 #sobre-mi {
@@ -136,7 +134,8 @@ header {
 
 .perfil-columnas {
   display: grid;
-  gap: 20px;
+  gap: 10px;
+  max-width: 600px;
 }
 
 .perfil-bloque ul {
@@ -161,8 +160,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-    background-color: #000;
+  padding: 16px 40px;
+  background-color: #000;
 }
 footer p {
    color: #fff;
