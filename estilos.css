@@ -195,7 +195,11 @@ footer p {
 }
 
 
-.formulario {
+.formulario { 
+   max-width: 700px;
+  margin: 80px auto; 
+  padding: 40px;
+
   max-width: 700px;
 box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
 
