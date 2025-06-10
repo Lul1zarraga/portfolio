@@ -25,12 +25,12 @@ a {
 }
 h1 {
   color: rgb(253, 116, 3);
-  font-size: 310px;
+  font-size: 300px;
   font-family: 'tt-travels-next', sans-serif;
 }
 
 .portfolio-intro {
-  height: 500px;
+  height: 800px;
   display: flex;
   justify-content: center; 
   align-items: center;     
