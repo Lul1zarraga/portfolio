@@ -18,3 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     contenido.style.display = 'block'; 
   });
 });
+
+const header = document.querySelector("header");
+const alturaHeader = header.offsetHeight;
+
+window.addEventListener("scroll", () => {
+  elementos.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < alturaHeader && rect.bottom > 0) {
+      el.classList.add("aclarar");
+    } else {
+      el.classList.remove("aclarar");
+    }
+  });
+});
+
