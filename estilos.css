@@ -134,7 +134,7 @@ width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 0 auto; 
 }
 
@@ -143,12 +143,9 @@ width: 100%;
 }
 
 .perfil-columnas {
-  max-width: 600px;
+  max-width: 350px;
 }
 
-.perfil-bloque {
-  margin-bottom: 20px; 
-}
 
 .perfil-bloque ul {
   margin: 6px 0;
