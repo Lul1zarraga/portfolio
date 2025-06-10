@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   textoAnimado.addEventListener("animationend", function () {
     textoAnimado.style.display = "none";
-    textoFijo.style.display = "block";
+    textoFijo.style.display = "inline-block";
   });
+
+
+
 
   const video = document.getElementById('videoIntro');
   const contenido = document.getElementById('contenido');
