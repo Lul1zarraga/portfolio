@@ -227,14 +227,10 @@ footer p {
   height: 100vh;
 }
 
-video {
-  height: 800px;
-  width: auto;
-}
 
 .formulario {
   width: 500px;
-  height: 800px;
+  height: 650px;
   border: 2px solid rgb(253, 116, 3);
   background-color: transparent;
   font-family: 'Roboto', sans-serif;
