@@ -167,6 +167,16 @@ width: 100%;
   font-weight: 700;
 }
 
+.dos-columnas {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+.dos-columnas li {
+  break-inside: avoid;
+}
+ 
+
 footer {
   display: flex;
   padding: 16px 40px;
