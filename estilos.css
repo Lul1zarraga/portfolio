@@ -134,6 +134,11 @@ width: 100%;
   transform: scale(1.2);
 }
 
+
+
+
+
+
 .contenedor-principal {
   display: flex;
   gap: 20px; 
@@ -149,6 +154,9 @@ width: 100%;
   flex: 1;
   max-width: 35%;
 }
+
+
+
 #foto-luciana {
   flex: 1;
   max-width: 30%;
@@ -157,6 +165,9 @@ width: 100%;
   position: relative;   
   z-index: 2;   
 }
+
+
+
 
  .perfil-columnas h4 {
   margin-bottom: 8px; 
@@ -178,6 +189,9 @@ width: 100%;
 }
 
  
+
+
+
 .estrella {
   color: #fd7403;
   font-weight: 700;
@@ -204,8 +218,12 @@ footer p {
 }
 
 
+
+
+
+
+
 .formulario { 
-   max-width: 700px;
   margin: 80px auto; 
   padding: 40px;
   max-width: 700px;
@@ -233,7 +251,7 @@ box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
 .formulario input[type="email"]:focus,
 .formulario select:focus,
 .formulario textarea:focus {
-  border-color: rgb(253, 80, 3);
+  border-color: rgb(253, 116, 3); 
   outline: none;
   background: #fff;
 }
