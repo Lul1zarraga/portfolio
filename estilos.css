@@ -138,8 +138,7 @@ width: 100%;
   display: flex;
   gap: 20px; 
   flex-wrap: wrap; 
-  max-width: 1600px;   
-  margin: 0 auto;     
+  max-width: 1600px;     
   padding: 20px;      
 }
 
