@@ -218,28 +218,58 @@ footer p {
 }
 
 
-.formulario {
-  font-family: 'Roboto', sans-serif;
-  box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
-  color: rgb(253, 116, 3);
-  font-weight: 600;
-  font-size: 18px;
-    border: 1.5px solid rgb(253, 116, 3);
-     background: rgba(255, 255, 255, 0.342);
-}
-
-.formulario label {
-  display: block;
-}
-
-
-.enviar-borrar {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .contacto-contenedor {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+video {
+  height: 800px;
+  width: auto;
+}
+
+.formulario {
+  width: 500px;
+  height: 800px;
+  border: 2px solid rgb(253, 116, 3);
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(253, 116, 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formulario label,
+.formulario input,
+.formulario select,
+.formulario textarea,
+.enviar-borrar input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: rgb(253, 116, 3);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.enviar-borrar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
