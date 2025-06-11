@@ -171,14 +171,19 @@ width: 100%;
 }
 
 .perfil-bloque ul {
-  column-count: 2;
-  column-gap: 20px;
   margin: 6px 0;
   padding-left: 20px;
 }
 
+.dos-columnas {
+  column-count: 2;
+  column-gap: 20px;
+}
 
-
+.dos-columnas li {
+  break-inside: avoid;
+}
+ 
 .estrella {
   color: #fd7403;
   font-weight: 700;
