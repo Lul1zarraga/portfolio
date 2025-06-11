@@ -159,6 +159,14 @@ width: 100%;
   z-index: 2;   
 }
 
+ .perfil-columnas h4 {
+  margin-bottom: 8px; 
+}
+
+.perfil-columnas ul {
+  margin-bottom: 16px;
+}
+
 
 .perfil-columnas {
   flex: 0.8;          
