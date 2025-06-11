@@ -164,6 +164,11 @@ width: 100%;
 
 .dos-columnas li {
   break-inside: avoid;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+
 }
  
 .estrella {
