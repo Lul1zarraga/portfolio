@@ -150,6 +150,15 @@ width: 100%;
   flex: 1;
   max-width: 35%;
 }
+#foto-luciana {
+  flex: 1;
+  max-width: 30%;
+  text-align: center;
+  margin-top: -40px;    
+  position: relative;   
+  z-index: 2;   
+}
+
 
 .perfil-columnas {
   flex: 0.8;          
