@@ -283,3 +283,18 @@ box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
 .formulario input[type="reset"]:hover {
   background-color: rgb(253, 116, 3);
 }
+.contacto-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.contacto-contenedor video {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
+}
