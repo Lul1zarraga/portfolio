@@ -140,11 +140,6 @@ width: 100%;
   align-items: flex-start; 
   gap: 20px; 
   flex-wrap: wrap; 
- font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 6px;
-  color: #000;
 
 }
 #sobre-mi {
@@ -161,6 +156,11 @@ width: 100%;
 .perfil-columnas {
   flex: 1;
   max-width: 30%;
+   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #000;
 }
 
  
