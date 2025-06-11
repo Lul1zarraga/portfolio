@@ -287,9 +287,3 @@ footer p {
   padding: 40px;
 }
 
-.contacto-contenedor video {
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(253, 116, 3, 0.3);
-}
