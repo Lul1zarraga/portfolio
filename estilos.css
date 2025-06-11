@@ -170,11 +170,13 @@ width: 100%;
   color: #000;
 }
 
-
 .perfil-bloque ul {
+  column-count: 2;
+  column-gap: 20px;
   margin: 6px 0;
   padding-left: 20px;
 }
+
 
 
 .estrella {
