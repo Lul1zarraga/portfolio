@@ -139,8 +139,14 @@ width: 100%;
   justify-content: space-between; 
   align-items: flex-start; 
   gap: 20px; 
-}
+  flex-wrap: wrap; 
+ font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+  color: #000;
 
+}
 #sobre-mi {
   flex: 1;
   max-width: 30%;
@@ -149,27 +155,14 @@ width: 100%;
 #foto-luciana {
   flex: 1;
   max-width: 30%;
-  text-align: center; 
+  text-align: center;
 }
 
 .perfil-columnas {
   flex: 1;
   max-width: 30%;
-} 
-
-.dos-columnas {
-  column-count: 2;
-  column-gap: 20px;
 }
 
-.dos-columnas li {
-  break-inside: avoid;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #000;
-
-}
  
 .estrella {
   color: #fd7403;
