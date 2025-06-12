@@ -218,7 +218,6 @@ footer p {
   box-sizing: border-box;
 }
 
-
 .formulario label,
 .formulario input,
 .formulario textarea,
@@ -238,28 +237,22 @@ footer p {
   box-sizing: border-box;
 }
 
-
 .formulario select {
-  all: unset;
+  background-color: initial; 
+  font-family: initial; 
+  color: initial; 
+  border: initial; 
+  padding: initial; 
+  margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
-  padding: 6px 8px;
-  border: 1px solid #ccc;
-  background-color: white;
-  font-family: initial;
-  color: initial;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-/* Contenedor de botones */
 .enviar-borrar {
   display: flex;
   gap: 10px;
 }
-
 
 .enviar-borrar input {
   background-color: rgb(253, 116, 3);
