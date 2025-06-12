@@ -224,7 +224,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 94vh;
 }
 
 
@@ -232,9 +232,6 @@ footer p {
   width: 500px;
   height: 650px;
   border: 2px solid rgb(253, 116, 3);
-  background-color: transparent;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(253, 116, 3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,12 +257,10 @@ footer p {
   padding: 8px;
   margin-bottom: 15px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .enviar-borrar {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
 
