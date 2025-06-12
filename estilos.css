@@ -276,7 +276,9 @@ footer p {
   justify-content: center;
   row-gap: 60px;
   column-gap: 40px;
-  padding: 20px 20px 40px; 
+  padding: 20px 20px 40px;
+  margin: 40px auto; 
+  max-width: 1200px; 
 }
 
 .trabajo {
@@ -297,17 +299,3 @@ footer p {
   margin: 0;
 }
 
-
-main h2 {
-  margin-bottom: 8px;
-}
-
-main h4 {
-  margin-bottom: 32px;
-  font-weight: normal;
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-}
