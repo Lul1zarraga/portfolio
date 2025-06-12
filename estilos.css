@@ -218,6 +218,9 @@ footer p {
   box-sizing: border-box;
 }
 
+.formulario label,
+.formulario input,
+.formulario textarea,
 .enviar-borrar input {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
