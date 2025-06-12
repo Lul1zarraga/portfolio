@@ -244,3 +244,19 @@ footer p {
   display: flex;
   gap: 10px;
 }
+
+.enviar-borrar input {
+  background-color: rgb(253, 116, 3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.enviar-borrar input:hover {
+  background-color: rgb(253, 3, 99);
+}
