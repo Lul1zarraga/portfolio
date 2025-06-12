@@ -220,7 +220,6 @@ footer p {
 
 .formulario label,
 .formulario input,
-.formulario select,
 .formulario textarea,
 .enviar-borrar input {
   font-family: 'Roboto', sans-serif;
@@ -242,5 +241,4 @@ footer p {
 .enviar-borrar {
   display: flex;
   gap: 10px;
-}
-
+} 
