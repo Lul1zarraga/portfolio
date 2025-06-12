@@ -135,43 +135,15 @@ width: 100%;
 
 .contenedor-principal {
   display: flex;
-  gap: 20px; 
-  flex-wrap: wrap; 
-  max-width: 1600px;     
-  padding: 20px;      
-}
-
-#sobre-mi,
-#foto-luciana {
-  flex: 1;
-  max-width: 35%;
-}
-
-#foto-luciana {
-  flex: 1;
-  max-width: 30%;
-  text-align: center;
-  margin-top: -40px;    
-  position: relative;   
-  z-index: 2;   
-}
-
- .perfil-columnas h4 {
-  margin-bottom: 8px; 
-}
-
-.perfil-columnas ul {
-  margin-bottom: 16px;
 }
 
 .perfil-columnas {
-  flex: 0.8;          
-  max-width: 25%;    
+
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 6px;
-  color: #000;
+
+
 }
 
 .estrella {
