@@ -263,34 +263,15 @@ footer p {
   background-color: rgb(253, 3, 99);
 }
 
-#portfolio {
-  padding: 100px 40px 80px 40px;
-  background-color: #fff7f0;
-  text-align: center;
-}
-
-#portfolio h3 {
-  font-size: 60px;
-  color: #fd7403;
-  font-family: 'tt-travels-next', sans-serif;
-  margin-bottom: 10px;
-}
-
-#portfolio .subtitulo {
-  font-family: 'Ruda', sans-serif;
-  font-size: 24px;
-  color: #fd0363;
-  margin-bottom: 50px;
-}
-
 .galeria-trabajos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   justify-items: center;
 }
 
 .trabajo {
+  width: 100%;
   max-width: 400px;
   background-color: #fff;
   border-radius: 16px;
@@ -305,7 +286,8 @@ footer p {
 
 .trabajo img {
   width: 100%;
-  height: auto;
+  height: 320px; /* todos iguales */
+  object-fit: cover; /* recorta sin deformar */
   border-radius: 12px;
   margin-bottom: 10px;
 }
@@ -323,4 +305,3 @@ footer p {
   color: #000;
   line-height: 1.4;
 }
-
