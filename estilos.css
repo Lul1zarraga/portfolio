@@ -19,7 +19,6 @@ body {
   z-index: 9999;
 }
 
-
 a {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
@@ -134,11 +133,6 @@ width: 100%;
   transform: scale(1.2);
 }
 
-
-
-
-
-
 .contenedor-principal {
   display: flex;
   gap: 20px; 
@@ -147,15 +141,11 @@ width: 100%;
   padding: 20px;      
 }
 
-
-
 #sobre-mi,
 #foto-luciana {
   flex: 1;
   max-width: 35%;
 }
-
-
 
 #foto-luciana {
   flex: 1;
@@ -166,9 +156,6 @@ width: 100%;
   z-index: 2;   
 }
 
-
-
-
  .perfil-columnas h4 {
   margin-bottom: 8px; 
 }
@@ -176,7 +163,6 @@ width: 100%;
 .perfil-columnas ul {
   margin-bottom: 16px;
 }
-
 
 .perfil-columnas {
   flex: 0.8;          
@@ -187,10 +173,6 @@ width: 100%;
   margin-bottom: 6px;
   color: #000;
 }
-
- 
-
-
 
 .estrella {
   color: #fd7403;
@@ -205,7 +187,6 @@ width: 100%;
 .dos-columnas li {
   break-inside: avoid;
 }
- 
 
 footer {
   display: flex;
@@ -217,16 +198,14 @@ footer p {
     margin: 0;
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .contacto-contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94vh;
+  min-height: calc(100vh - 80px);
 }
-
 
 .formulario {
   width: 500px;
@@ -239,10 +218,6 @@ footer p {
   box-sizing: border-box;
 }
 
-.formulario label,
-.formulario input,
-.formulario select,
-.formulario textarea,
 .enviar-borrar input {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -257,6 +232,7 @@ footer p {
   padding: 8px;
   margin-bottom: 15px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .enviar-borrar {
