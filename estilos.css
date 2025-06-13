@@ -158,6 +158,21 @@ header {
   display: block;
 }
 
+.contenedor-principal {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  gap: 0; 
+}
+
+#foto-luciana img {
+  width: 635px;
+  height: 700px;
+  display: block;
+}
+
 
 .contenedor-principal {
   display: flex;
@@ -209,6 +224,7 @@ header {
   line-height: 28px;
 }
 
+
 #sobre-mi {
   font-family: 'Roboto', sans-serif;
 }
@@ -222,7 +238,7 @@ header {
   font-size: 18px;
   line-height: 28px;
   margin-top: 0; 
-
+}
 footer {
   display: flex;
   padding: 16px 40px;
@@ -242,7 +258,6 @@ footer p {
   align-items: center;
   height: 94vh;
 }
-
 .formulario {
   width: 500px;
   height: 650px;
@@ -263,6 +278,7 @@ footer p {
   color: rgb(253, 116, 3);
 }
 
+/* Espacio entre label y campo */
 .formulario label {
   margin-bottom: 7px;
 }
@@ -309,6 +325,7 @@ footer p {
 .enviar-borrar input:hover {
   background-color: rgb(253, 3, 99);
 }
+
 .trabajos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -349,4 +366,4 @@ footer p {
   border-radius: 30px;
   object-fit: cover;
 }
-}
+
