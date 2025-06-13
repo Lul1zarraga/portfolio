@@ -1,4 +1,4 @@
-TP3 - Computación 3 
+TP3 Individual - Computación 3 
 Este proyecto es un portfolio web interactivo desarrollado con HTML5, CSS y JavaScript, utilizando Visual Studio Code como editor. Está compuesto por tres archivos HTML vinculados entre sí: index.html, proyectos.html y contacto.html.
 
 El diseño fue pensado inicialmente para una resolución de 1920x1080 px, pero se aplicaron media queries para asegurar una correcta adaptación a dispositivos móviles y pantallas de menor tamaño. Se emplearon técnicas de Flexbox para lograr una distribución ordenada y adaptable, optimizando especialmente la versión responsive mediante la reorganización del contenido en columnas cuando fue necesario, para evitar superposiciones y desplazamientos laterales no deseados.
