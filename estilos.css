@@ -309,7 +309,6 @@ footer p {
 .enviar-borrar input:hover {
   background-color: rgb(253, 3, 99);
 }
-
 .trabajos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -330,6 +329,10 @@ footer p {
   width: 400px;
 }
 
+.trabajo h3 {
+  margin: 0;
+}
+
 .trabajo-img-container {
   width: 400px;
   height: 500px;
@@ -338,7 +341,6 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
 }
 
 .trabajo-img-container img {
@@ -347,7 +349,4 @@ footer p {
   border-radius: 30px;
   object-fit: cover;
 }
-
-.trabajo h3 {
-  margin: 0;
-} }
+}
