@@ -321,3 +321,10 @@ footer p {
 .trabajo h3 {
   margin: 0;
 }  
+main > h2,
+main > h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 8px; /* espacio pequeño entre h2 y h4 */
+  font-weight: 400; /* opcional, para que el h4 no quede muy pesado */
+}
