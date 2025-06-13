@@ -279,6 +279,7 @@ footer p {
   background-color: rgb(253, 3, 99);
 }
 
+
 .trabajos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -296,12 +297,18 @@ footer p {
   align-items: center;
   text-align: center;
   gap: 8px;
-  width: 320px;
+  width: 400px; 
 }
 
-.trabajo img {
-  width: 320px;
-  height: 320px;
+.trabajo-img-container {
+  width: 400px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .trabajo h3 {
