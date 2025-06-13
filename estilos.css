@@ -143,16 +143,6 @@ header {
   transform: scale(1.2);
 }
 
-.perfil-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto 80px auto;
-  padding: 0 40px;
-  box-sizing: border-box;
-}
 
 .columna-grande {
   display: flex;
@@ -177,7 +167,33 @@ header {
   color: #000;
   line-height: 28px;
 }
+perfil-grid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  max-width: 1440px;  
+  margin: 0 auto 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
 
+
+.columna-adobe {
+  width: 184px;
+  flex-shrink: 0; 
+}
+
+
+.columna-grande {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.columna-grande .bloque {
+  flex: 1 1 0; 
+  min-width: 0;
+}
 
 
 footer {
