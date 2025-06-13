@@ -142,7 +142,6 @@ header {
 .nav-social-iconos a:hover img {
   transform: scale(1.2);
 }
-
 /* Contenedor principal para foto + sobre mí */
 .contenedor-principal {
   display: flex;
@@ -150,22 +149,25 @@ header {
   margin: 0 auto 80px auto;
   padding: 0 40px;
   box-sizing: border-box;
-  gap: 0; /* sin espacio */
+  gap: 20px; /* espacio entre foto y texto */
+  align-items: flex-start; /* alineados arriba */
 }
 
 #foto-luciana img {
   width: 635px;
   height: 700px;
   display: block;
+  object-fit: cover; /* que mantenga proporción */
+  border-radius: 8px; /* opcional, bordes redondeados */
 }
 
 .contenido-derecho {
-  width: calc(100% - 635px); /* que ocupe el resto del ancho */
-  padding-left: 20px; /* un poco de espacio si querés, o 0 si no */
+  flex: 1; /* que ocupe todo el espacio que queda */
   box-sizing: border-box;
+  padding-left: 20px;
 }
 
-/* Contenedor para las 4 columnas debajo */
+/* Contenedor para las columnas de perfil debajo */
 .perfil-grid {
   display: flex;
   gap: 20px;
@@ -175,11 +177,11 @@ header {
   box-sizing: border-box;
 }
 
-/* Las 3 columnas grandes (Formación, Idiomas, Experiencia) que se ajustan juntas */
+/* Las 3 columnas grandes (Formación, Idiomas, Experiencia) */
 .columna-grande {
   display: flex;
   gap: 20px;
-  flex-grow: 1; /* que ocupen todo el espacio menos el de adobe */
+  flex-grow: 1; /* que ocupen el espacio restante */
   min-width: 0;
 }
 
@@ -195,7 +197,7 @@ header {
   flex-shrink: 0; /* que no se achique */
 }
 
-/* Listas */
+/* Listas dentro de las columnas */
 .columna-grande ul,
 .columna-adobe ul {
   padding-left: 20px;
@@ -204,6 +206,7 @@ header {
   color: #000;
   line-height: 28px;
 }
+
 
 footer {
   display: flex;
