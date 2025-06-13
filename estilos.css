@@ -271,7 +271,9 @@ footer p {
 .formulario label {
   margin-bottom: 7px;
 }
-
+.formulario h3 {
+  text-align: center;
+}
 .enviar-borrar {
   display: flex;
   gap: 10px;
