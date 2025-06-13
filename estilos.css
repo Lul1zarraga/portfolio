@@ -142,32 +142,28 @@ header {
 .nav-social-iconos a:hover img {
   transform: scale(1.2);
 }
-/* Contenedor principal para foto + sobre mí */
 .contenedor-principal {
   display: flex;
   max-width: 1440px;
-  margin: 0 auto 80px auto;
   padding: 0 40px;
   box-sizing: border-box;
-  gap: 20px; /* espacio entre foto y texto */
-  align-items: flex-start; /* alineados arriba */
+  align-items: flex-start; 
 }
 
 #foto-luciana img {
   width: 635px;
   height: 700px;
   display: block;
-  object-fit: cover; /* que mantenga proporción */
-  border-radius: 8px; /* opcional, bordes redondeados */
-}
+  object-fit: cover; 
+  border-radius: 8px; 
+} 
 
 .contenido-derecho {
-  flex: 1; /* que ocupe todo el espacio que queda */
+  flex: 1; 
   box-sizing: border-box;
   padding-left: 20px;
 }
 
-/* Contenedor para las columnas de perfil debajo */
 .perfil-grid {
   display: flex;
   gap: 20px;
@@ -177,27 +173,23 @@ header {
   box-sizing: border-box;
 }
 
-/* Las 3 columnas grandes (Formación, Idiomas, Experiencia) */
 .columna-grande {
   display: flex;
   gap: 20px;
-  flex-grow: 1; /* que ocupen el espacio restante */
+  flex-grow: 1; 
   min-width: 0;
 }
 
-/* Cada bloque dentro de la columna grande toma igual espacio */
 .columna-grande .bloque {
   flex: 1 1 0;
   min-width: 0;
 }
 
-/* Adobe con ancho fijo */
 .columna-adobe {
   width: 184px;
-  flex-shrink: 0; /* que no se achique */
+  flex-shrink: 0;
 }
 
-/* Listas dentro de las columnas */
 .columna-grande ul,
 .columna-adobe ul {
   padding-left: 20px;
@@ -206,8 +198,7 @@ header {
   color: #000;
   line-height: 28px;
 }
-
-
+ 
 footer {
   display: flex;
   padding: 16px 40px;
