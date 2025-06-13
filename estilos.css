@@ -302,8 +302,7 @@ footer p {
   row-gap: 60px;
   column-gap: 40px;
   padding: 20px 20px 40px;
-  margin: 40px auto;
-  max-width: 1200px;
+  margin: 80px auto;
 }
 
 .trabajo {
