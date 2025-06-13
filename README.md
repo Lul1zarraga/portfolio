@@ -8,3 +8,4 @@ La estética general es limpia, moderna y funcional, basada en una paleta de col
 El proyecto también incluye ilustraciones, una imagen de perfil, un favicon personalizado y un video de apertura que enriquece la experiencia de bienvenida al sitio.
 
 Por ultimo, se dio uso de Figma para planificar layouts y nomeclar. Lamentablemente tuve problemas con los componentes que hice asi que opte por no aplicarlos. 
+Link de figma: https://www.figma.com/design/ori3DxcBR1aNcnSj2k1PXT/Portfolio?t=qDFjsuNZt9CuhMFh-1
