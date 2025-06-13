@@ -324,7 +324,7 @@ footer p {
   align-items: center;
   text-align: center;
   gap: 8px;
-  width: 400px; 
+  width: 400px;
 }
 
 .trabajo-img-container {
@@ -338,7 +338,13 @@ footer p {
   margin-bottom: 16px;
 }
 
+.trabajo-img-container img {
+  width: 320px;
+  height: 320px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
 .trabajo h3 {
   margin: 0;
-}
-}
+} }
