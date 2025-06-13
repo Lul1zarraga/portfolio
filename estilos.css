@@ -326,18 +326,28 @@ main > h4 {
   margin-bottom: 8px; 
   font-weight: 400; 
 }
-
 @media (max-width: 600px) {
- 
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
   header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
 
   .menu-navegacion {
     flex-direction: column;
     gap: 10px;
+    padding: 0;
   }
 
   .nav-social-iconos {
@@ -348,13 +358,14 @@ main > h4 {
     margin-top: 10px;
   }
 
-
+  /* INTRO */
   .portfolio-intro h1 {
     font-size: 2em;
     text-align: center;
+    margin: 20px;
   }
 
-
+  /* CONTENEDOR PRINCIPAL */
   .contenedor-principal {
     flex-direction: column;
     align-items: center;
@@ -362,17 +373,31 @@ main > h4 {
   }
 
   #foto-luciana img {
-    width: 80%;
+    width: 90%;
+    max-width: 300px;
     height: auto;
     margin-bottom: 20px;
   }
 
   .contenido-derecho {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
+  /* SOBRE MÍ */
+  #sobre-mi h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  #sobre-mi p {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  /* PERFIL */
   .perfil-grid {
+    display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 20px;
@@ -383,24 +408,52 @@ main > h4 {
     width: 100%;
   }
 
- 
+  .bloque h4,
+  .columna-adobe h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .bloque ul,
+  .columna-adobe ul {
+    padding-left: 20px;
+  }
+
+  /* PROYECTOS */
   .trabajos-grid {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     padding: 20px;
   }
 
-  .trabajo img {
+  .trabajo {
+    text-align: center;
     width: 100%;
     max-width: 320px;
+  }
+
+  .trabajo img {
+    width: 100%;
     height: auto;
   }
 
- 
+  .trabajo h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .trabajo p {
+    font-size: 0.95em;
+  }
+
+  /* FORMULARIO CONTACTO */
   .contacto-contenedor {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
 
   .contacto-contenedor video {
@@ -416,6 +469,7 @@ main > h4 {
   .formulario h3 {
     text-align: center;
     font-size: 1.5em;
+    margin-bottom: 20px;
   }
 
   .formulario label,
@@ -439,8 +493,14 @@ main > h4 {
     font-size: 1em;
   }
 
+  /* FOOTER */
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
   footer p {
     font-size: 0.9em;
-    text-align: center;
+    margin: 5px 0;
   }
 }
