@@ -143,13 +143,14 @@ header {
   transform: scale(1.2);
 }
 
+/* Contenedor principal para foto + sobre mí */
 .contenedor-principal {
   display: flex;
   max-width: 1440px;
   margin: 0 auto 80px auto;
   padding: 0 40px;
   box-sizing: border-box;
-  gap: 0; 
+  gap: 0; /* sin espacio */
 }
 
 #foto-luciana img {
@@ -158,33 +159,13 @@ header {
   display: block;
 }
 
-.contenedor-principal {
-  display: flex;
-  max-width: 1440px;
-  margin: 0 auto 80px auto;
-  padding: 0 40px;
-  box-sizing: border-box;
-  gap: 0; 
-}
-
-#foto-luciana img {
-  width: 635px;
-  height: 700px;
-  display: block;
-}
-
-
-.contenedor-principal {
-  display: flex;
-  justify-content: center;
-  gap: 0; 
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px;
+.contenido-derecho {
+  width: calc(100% - 635px); /* que ocupe el resto del ancho */
+  padding-left: 20px; /* un poco de espacio si querés, o 0 si no */
   box-sizing: border-box;
 }
 
-
+/* Contenedor para las 4 columnas debajo */
 .perfil-grid {
   display: flex;
   gap: 20px;
@@ -194,27 +175,27 @@ header {
   box-sizing: border-box;
 }
 
-
+/* Las 3 columnas grandes (Formación, Idiomas, Experiencia) que se ajustan juntas */
 .columna-grande {
   display: flex;
   gap: 20px;
-  flex-grow: 1;
+  flex-grow: 1; /* que ocupen todo el espacio menos el de adobe */
   min-width: 0;
 }
 
-
+/* Cada bloque dentro de la columna grande toma igual espacio */
 .columna-grande .bloque {
   flex: 1 1 0;
   min-width: 0;
 }
 
-
+/* Adobe con ancho fijo */
 .columna-adobe {
   width: 184px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* que no se achique */
 }
 
-
+/* Listas */
 .columna-grande ul,
 .columna-adobe ul {
   padding-left: 20px;
@@ -224,21 +205,6 @@ header {
   line-height: 28px;
 }
 
-
-#sobre-mi {
-  font-family: 'Roboto', sans-serif;
-}
-
-#sobre-mi h2 {
-  font-size: 28px;
-  margin-bottom: 4px; 
-}
-
-#sobre-mi p {
-  font-size: 18px;
-  line-height: 28px;
-  margin-top: 0; 
-}
 footer {
   display: flex;
   padding: 16px 40px;
@@ -278,11 +244,6 @@ footer p {
   color: rgb(253, 116, 3);
 }
 
-/* Espacio entre label y campo */
-.formulario label {
-  margin-bottom: 7px;
-}
-
 .formulario input,
 .formulario textarea {
   background-color: rgba(255, 255, 255, 0.2);
@@ -303,6 +264,9 @@ footer p {
   width: 100%;
   box-sizing: border-box;
   cursor: pointer;
+}
+.formulario label {
+  margin-bottom: 7px;
 }
 
 .enviar-borrar {
@@ -343,27 +307,14 @@ footer p {
   align-items: center;
   text-align: center;
   gap: 8px;
-  width: 400px;
+  width: 320px;
+}
+
+.trabajo img {
+  width: 320px;
+  height: 320px;
 }
 
 .trabajo h3 {
   margin: 0;
-}
-
-.trabajo-img-container {
-  width: 400px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.trabajo-img-container img {
-  width: 320px;
-  height: 320px;
-  border-radius: 30px;
-  object-fit: cover;
-}
-
+}  
