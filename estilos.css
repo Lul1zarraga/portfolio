@@ -209,7 +209,19 @@ header {
   line-height: 28px;
 }
 
+#sobre-mi {
+  font-family: 'Roboto', sans-serif;
+}
 
+#sobre-mi h2 {
+  font-size: 28px;
+  margin-bottom: 4px; 
+}
+
+#sobre-mi p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0; 
 
 footer {
   display: flex;
@@ -328,4 +340,5 @@ footer p {
 
 .trabajo h3 {
   margin: 0;
+}
 }
