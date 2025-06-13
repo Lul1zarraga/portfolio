@@ -2,11 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #fcd2e2, #ffe5c2);
+  background: linear-gradient(to bottom, rgb(252, 210, 226), rgb(255, 229, 194));
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
 
@@ -23,6 +22,7 @@ body {
 a {
   cursor: url("img/cursor-personalizado.svg") 20 20, auto;
 }
+
 h1 {
   color: rgb(253, 116, 3);
   font-size: 300px;
@@ -34,26 +34,24 @@ h2 {
   color: rgb(253, 116, 3);
   font-family: 'tt-travels-next', sans-serif;
 }
-..
 
 h3 {
   font-size: 40px;
   color: rgb(253, 116, 3);
   font-family: 'tt-travels-next', sans-serif;
 }
-..
 
 h4 {
   font-family: 'Archivo Expanded', sans-serif;
   font-weight: 200;
   font-size: 30px;
-  color: #FD0363;
+  color: rgb(253, 3, 99);
 }
 
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: #000;
+  color: rgb(0, 0, 0);
   line-height: 28px;
   margin: 6px 0;
 }
@@ -61,11 +59,12 @@ p {
 .portfolio-intro {
   height: 900px;
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
 }
 
-#texto-animado, #texto-fijo {
+#texto-animado,
+#texto-fijo {
   display: inline-block;
   white-space: nowrap;
 }
@@ -82,7 +81,6 @@ main {
   max-width: 1440px;
   margin: 0 auto;
 }
- 
 
 @keyframes mover {
   0% {
@@ -92,7 +90,7 @@ main {
     transform: translateX(-100%);
   }
 }
- 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -101,19 +99,17 @@ header {
   position: fixed;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-box-sizing: border-box;
-width: 100%;
-
+  -webkit-backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .aclarar {
-  filter: brightness(1.7); 
+  filter: brightness(1.7);
   transition: filter 0.3s ease;
 }
-
 
 .menu-navegacion {
   display: flex;
@@ -146,18 +142,14 @@ width: 100%;
 .nav-social-iconos a:hover img {
   transform: scale(1.2);
 }
+
 .contenedor-principal {
   display: flex;
   justify-content: center;
-  gap: 40px; 
+  gap: 40px;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
-}
-
-#foto-luciana img {
-  max-width: 100%;
-  height: auto;
 }
 
 .contenido-derecho {
@@ -168,15 +160,15 @@ width: 100%;
   padding-left: 20px;
 }
 
-
 footer {
   display: flex;
   padding: 16px 40px;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
+
 footer p {
-   color: #fff;
-    margin: 0;
+  color: rgb(255, 255, 255);
+  margin: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -185,7 +177,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 94vh; 
+  height: 94vh;
 }
 
 .formulario {
@@ -219,11 +211,11 @@ footer p {
 }
 
 .formulario select {
-  background-color: initial; 
-  font-family: initial; 
-  color: initial; 
-  border: initial; 
-  padding: initial; 
+  background-color: initial;
+  font-family: initial;
+  color: initial;
+  border: initial;
+  padding: initial;
   margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
@@ -237,7 +229,7 @@ footer p {
 
 .enviar-borrar input {
   background-color: rgb(253, 116, 3);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   padding: 10px 20px;
@@ -249,20 +241,6 @@ footer p {
 
 .enviar-borrar input:hover {
   background-color: rgb(253, 3, 99);
-}
-
-main {
-  padding: 0 20px;
-  max-width: 1200px;
-  margin: 0 auto;  
-}
-
-main h2 {
-  margin-bottom: 10px;
-}
-
-main h4 {
-  margin-bottom: 30px;
 }
 
 .trabajos-grid {
