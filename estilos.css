@@ -29,10 +29,13 @@ h1 {
   font-family: 'tt-travels-next', sans-serif;
 }
 
+
+
 h2 {
   font-size: 96px;
   color: rgb(253, 116, 3);
   font-family: 'tt-travels-next', sans-serif;
+  margin-bottom: 12px; 
 }
 
 h3 {
@@ -54,7 +57,11 @@ p {
   color: rgb(0, 0, 0);
   line-height: 28px;
   margin: 6px 0;
+    margin-top: 0; 
 }
+  
+
+
 
 .portfolio-intro {
   height: 900px;
