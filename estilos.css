@@ -143,22 +143,42 @@ header {
   transform: scale(1.2);
 }
 
-.contenedor-principal {
+.perfil-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
-.contenido-derecho {
-  max-width: 600px;
+.columna-grande {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 966px; 
 }
 
-.perfil-columnas ul {
+.columna-grande .bloque {
+  width: 322px;
+}
+
+.columna-adobe {
+  width: 184px;
+}
+
+.columna-grande ul,
+.columna-adobe ul {
   padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000;
+  line-height: 28px;
 }
+
+
 
 footer {
   display: flex;
