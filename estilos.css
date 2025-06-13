@@ -326,3 +326,121 @@ main > h4 {
   margin-bottom: 8px; 
   font-weight: 400; 
 }
+
+@media (max-width: 600px) {
+ 
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-navegacion {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-social-iconos {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  .portfolio-intro h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #foto-luciana img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contenido-derecho {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .perfil-grid {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .columna-grande,
+  .columna-adobe {
+    width: 100%;
+  }
+
+ 
+  .trabajos-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .trabajo img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+ 
+  .contacto-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-contenedor video {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .formulario h3 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .formulario label,
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .enviar-borrar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .enviar-borrar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
