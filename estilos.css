@@ -144,20 +144,58 @@ header {
 }
 
 
-.columna-grande {
+.contenedor-principal {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 966px; 
+  justify-content: center;
+  gap: 0; 
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.columna-grande .bloque {
-  width: 322px;
+#foto-luciana img {
+  display: block;
+  width: 635px;
+  height: 700px;
 }
+
+.contenido-derecho {
+  max-width: calc(1440px - 635px);
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+.perfil-grid {
+  display: flex;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+
+.columna-grande {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+
+.columna-grande .bloque {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 
 .columna-adobe {
   width: 184px;
+  flex-shrink: 0;
 }
+
 
 .columna-grande ul,
 .columna-adobe ul {
@@ -167,33 +205,7 @@ header {
   color: #000;
   line-height: 28px;
 }
-perfil-grid {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  max-width: 1440px;  
-  margin: 0 auto 80px auto;
-  padding: 0 40px;
-  box-sizing: border-box;
-}
 
-
-.columna-adobe {
-  width: 184px;
-  flex-shrink: 0; 
-}
-
-
-.columna-grande {
-  display: flex;
-  gap: 20px;
-  flex-grow: 1;
-}
-
-.columna-grande .bloque {
-  flex: 1 1 0; 
-  min-width: 0;
-}
 
 
 footer {
