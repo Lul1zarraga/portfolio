@@ -273,6 +273,11 @@ footer p {
   background-color: rgb(253, 3, 99);
 }
 
+.pagina-proyectos main {
+  padding-top: 60px;
+}
+
+
 .trabajos-grid {
   display: flex;
   flex-wrap: wrap;
@@ -296,9 +301,12 @@ footer p {
   height: 320px;
 }
 
+
 .trabajo h3 {
   margin: 0;
-}  
+}
+
+
 main > h2,
 main > h4 {
   text-align: center;
