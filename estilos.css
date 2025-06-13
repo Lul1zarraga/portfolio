@@ -263,6 +263,10 @@ footer p {
   color: rgb(253, 116, 3);
 }
 
+.formulario label {
+  margin-bottom: 7px;
+}
+
 .formulario input,
 .formulario textarea {
   background-color: rgba(255, 255, 255, 0.2);
@@ -305,7 +309,6 @@ footer p {
 .enviar-borrar input:hover {
   background-color: rgb(253, 3, 99);
 }
-
 
 .trabajos-grid {
   display: flex;
