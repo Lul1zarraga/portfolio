@@ -320,6 +320,7 @@ main > h2,
 main > h4 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 8px; /* espacio pequeño entre h2 y h4 */
-  font-weight: 400; /* opcional, para que el h4 no quede muy pesado */
+  margin-bottom: 8px; 
+  font-weight: 400; 
+  padding-top: 100px;
 }
