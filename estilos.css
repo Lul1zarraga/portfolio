@@ -143,6 +143,21 @@ header {
   transform: scale(1.2);
 }
 
+.contenedor-principal {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+  gap: 0; 
+}
+
+#foto-luciana img {
+  width: 635px;
+  height: 700px;
+  display: block;
+}
+
 
 .contenedor-principal {
   display: flex;
@@ -151,18 +166,6 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   padding: 40px;
-  box-sizing: border-box;
-}
-
-#foto-luciana img {
-  display: block;
-  width: 635px;
-  height: 700px;
-}
-
-.contenido-derecho {
-  max-width: calc(1440px - 635px);
-  padding-left: 20px;
   box-sizing: border-box;
 }
 
