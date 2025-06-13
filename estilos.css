@@ -151,35 +151,17 @@ header {
 }
 .contenedor-principal {
   display: flex;
-  max-width: 1440px;
   padding: 0 40px;
-  box-sizing: border-box;
-  align-items: flex-start; 
+
 }
 
-#foto-luciana img {
-  width: 635px;
-  height: 700px;
-  display: block;
-  object-fit: cover; 
-  border-radius: 8px; 
-} 
 .contenido-derecho {
-  flex: 1;
-  box-sizing: border-box;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; 
-  height: 700px; 
+  padding-left: 40px;
 }
 .perfil-grid {
   display: flex;
-  gap: 20px;
-  max-width: 1440px;
   margin: 0 auto 80px auto;
   padding: 0 40px;
-  box-sizing: border-box;
 }
 
 .columna-grande {
@@ -219,7 +201,6 @@ footer p {
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .contacto-contenedor {
   display: flex;
