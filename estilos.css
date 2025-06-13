@@ -161,6 +161,14 @@ header {
   padding: 0 40px;
 }
 
+.perfil-grid h4 {
+  margin-bottom: 8px; 
+}
+
+.perfil-grid ul {
+  margin-top: 0; 
+}
+
 .columna-grande {
   display: flex;
   gap: 20px;
